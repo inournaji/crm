@@ -5,5 +5,14 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+            'defaultRoles' => ['user'],
+        ],
     ],
+    'modules' => [
+        'rbac' =>  [
+            'class' => 'johnitvn\rbacplus\Module'
+        ]
+    ]
 ];
