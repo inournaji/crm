@@ -10,6 +10,9 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
+$userid= Yii::$app->user->getId();
+$userRole = Yii::$app->authManager->getRolesByUser($userid);
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -37,6 +40,15 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
     ];
+    if (isset($userRole['admin'])) {
+        $menuItems [] = ['label' => 'User Administration',
+            'items' => [
+                ['label' => 'Roles managment', 'url' => ['/auth-item']],
+                ['label' => 'Rules managment', 'url' => ['/auth-rule']],
+                ['label' => 'User roles', 'url' => ['/auth-assignment']],
+            ]
+        ];
+    }
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {

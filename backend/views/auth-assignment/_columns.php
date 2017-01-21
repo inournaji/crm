@@ -2,21 +2,23 @@
 use yii\helpers\Url;
 
 return [
-    [
+    /*[
         'class' => 'kartik\grid\CheckboxColumn',
         'width' => '20px',
     ],
     [
         'class' => 'kartik\grid\SerialColumn',
         'width' => '30px',
-    ],
+    ],*/
         [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'item_name',
+        'label' => 'Role',
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'user_id',
+        'label' => 'User',
     ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',
