@@ -2,103 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/CHANGE.md" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/CHANGE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/Editable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/Editable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditableAsset.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditableAsset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditablePjaxAsset.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditablePjaxAsset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/LICENSE.md" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/README.md" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.css" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.min.css" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.min.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.min.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/composer.json" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/af/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/af/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ar/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ar/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/az/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/az/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bg/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bg/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bs/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bs/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ca/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ca/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/config.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/cs/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/cs/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/da/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/da/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/de/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/de/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el-GR/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el-GR/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/en/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/en/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eo/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eo/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/es/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/es/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/et/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/et/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eu/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fa/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fa/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fi/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fo/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fo/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fr/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gl/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gu/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/he/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/he/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hi/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hr/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hu/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hy/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hy/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/id/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/id/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/is/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/is/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/it/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/it/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ja/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ja/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ka/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ka/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kk/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kn/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ko/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ko/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ky/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ky/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lt/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lv/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lv/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mi/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mk/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mn/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mr/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ms/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ms/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mt/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nb/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nb/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nl/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nn/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pl/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-BR/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-BR/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-PT/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-PT/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/qu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/qu/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ro/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ro/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ru/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ru/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sa/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sa/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/se/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/se/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sk/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sl/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sq/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sq/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sr/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sv/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sv/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sw/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sw/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ta/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ta/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/te/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/te/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/th/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/th/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tj/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tj/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tl/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tn/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tr/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ts/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ts/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tt/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/uk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/uk/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ur/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ur/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/vi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/vi/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-CN/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-CN/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-TW/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-TW/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zu/kveditable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/yiisoft/extensions.php" afterPath="$PROJECT_DIR$/vendor/yiisoft/extensions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/viechle-brand/_columns.php" afterPath="$PROJECT_DIR$/backend/views/viechle-brand/_columns.php" />
     </list>
     <ignored path="crm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,12 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="m130524_201442_init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m130524_201442_init.php">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="289">
+              <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+              <folding>
+                <marker date="1485546487282" expanded="true" signature="2721:2778" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +50,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-691">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="294">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <marker date="1485528919005" expanded="true" signature="1805:1811" ph=" " />
               </folding>
@@ -154,11 +62,9 @@
       <file leaf-file-name="_columns.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_columns.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="e#6#26#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,8 +72,8 @@
       <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="231">
+              <caret line="20" column="36" selection-start-line="19" selection-start-column="12" selection-end-line="20" selection-end-column="36" />
               <folding>
                 <element signature="e#6#27#0#PHP" expanded="true" />
               </folding>
@@ -214,7 +120,6 @@
         <option value="$PROJECT_DIR$/backend/views/auth-assignment/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/auth-item/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/auth-rule/_columns.php" />
-        <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php" />
         <option value="$PROJECT_DIR$/console/migrations/m170124_185946_create_customer.php" />
         <option value="$PROJECT_DIR$/console/migrations/m170124_203254_create_customer_type.php" />
@@ -228,6 +133,7 @@
         <option value="$PROJECT_DIR$/backend/views/Attachment/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/viechle-brand/_form.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/backend/views/viechle-brand/_columns.php" />
       </list>
     </option>
@@ -370,7 +276,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="compo&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;mi&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m130524_201442_init.php&#10;composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
+    <property name="SearchEverywhereHistoryKey" value="main.p&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;compo&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;mi&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m130524_201442_init.php&#10;composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -447,7 +353,7 @@
       <workItem from="1484944517050" duration="13457000" />
       <workItem from="1485284290008" duration="5907000" />
       <workItem from="1485368521475" duration="3371000" />
-      <workItem from="1485524707675" duration="7852000" />
+      <workItem from="1485524707675" duration="10462000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1484907563744</created>
@@ -554,11 +460,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485008708260</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="lookyos crud">
+      <created>1485541026382</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1485541026382</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56663000" />
+    <option name="totallyTimeSpent" value="59273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1289" height="784" extended-state="6" />
@@ -608,7 +521,8 @@
     <MESSAGE value="remove unuseful branch" />
     <MESSAGE value="Role managment crud" />
     <MESSAGE value="auth crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth crud" />
+    <MESSAGE value="lookyos crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="lookyos crud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -640,6 +554,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -838,16 +753,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php" />
     <entry file="file://$PROJECT_DIR$/console/migrations/m170124_185946_create_customer.php" />
-    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-          <folding>
-            <element signature="e#66#94#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/console/migrations/m170125_190431_create_car_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -954,16 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="861">
@@ -974,21 +869,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-691">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="294">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <marker date="1485528919005" expanded="true" signature="1805:1811" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="36" selection-start-line="19" selection-start-column="12" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#6#27#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+          <folding>
+            <marker date="1485546487282" expanded="true" signature="2721:2778" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_columns.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#26#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,5 @@
 <?php
 use yii\helpers\Url;
-use kartik\editable\Editable;
 
 return [
     [
@@ -28,6 +27,17 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'status',
     ],
+    /*[
+        'class'=>'kartik\grid\EditableColumn',
+        'attribute'=>'status',
+        'editableOptions'=>[
+            'header'=>'Status',
+            'inputType'=>\kartik\editable\Editable::INPUT_SWITCH,
+            'options'=>['pluginOptions'=>['onText' => 'Active', 'offText' => 'Inactive',]]
+        ],
+
+        'pageSummary'=>true
+    ],*/
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,

@@ -41,11 +41,20 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],
     ];
     if (isset($userRole['admin'])) {
-        $menuItems [] = ['label' => 'User Administration',
+        $menuItems [] = ['label' => 'Administration',
+            'items' => [
+                ['label' => 'Attachments', 'url' => ['Attachment']],
+                ['label' => 'Customers', 'url' => ['/customer']],
+                ['label' => 'Emails', 'url' => ['/email']],
+            ]
+        ];
+        $menuItems [] = ['label' => 'Settings',
             'items' => [
                 ['label' => 'Roles managment', 'url' => ['/auth-item']],
                 ['label' => 'Rules managment', 'url' => ['/auth-rule']],
                 ['label' => 'User roles', 'url' => ['/auth-assignment']],
+                ['label' => 'Customer types', 'url' => ['/customer-type']],
+                ['label' => 'Car brands', 'url' => ['/viechle-brand']],
             ]
         ];
     }
