@@ -1,15 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="remove unuseful branch">
+    <list default="true" id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/auth-assignment/_columns.php" afterPath="$PROJECT_DIR$/backend/views/auth-assignment/_columns.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/auth-assignment/_form.php" afterPath="$PROJECT_DIR$/backend/views/auth-assignment/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/auth-item/_columns.php" afterPath="$PROJECT_DIR$/backend/views/auth-item/_columns.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/auth-item/_form.php" afterPath="$PROJECT_DIR$/backend/views/auth-item/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/auth-rule/_columns.php" afterPath="$PROJECT_DIR$/backend/views/auth-rule/_columns.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/auth-rule/_form.php" afterPath="$PROJECT_DIR$/backend/views/auth-rule/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/CHANGE.md" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/CHANGE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/Editable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/Editable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditableAsset.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditableAsset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditablePjaxAsset.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/EditablePjaxAsset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/LICENSE.md" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/README.md" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.css" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.min.css" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/css/editable.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.min.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable-pjax.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.min.js" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/assets/js/editable.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/composer.json" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/af/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/af/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ar/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ar/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/az/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/az/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bg/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bg/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bs/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/bs/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ca/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ca/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/config.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/cs/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/cs/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/da/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/da/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/de/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/de/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el-GR/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el-GR/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/el/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/en/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/en/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eo/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eo/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/es/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/es/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/et/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/et/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/eu/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fa/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fa/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fi/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fo/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fo/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/fr/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gl/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/gu/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/he/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/he/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hi/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hr/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hu/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hy/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/hy/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/id/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/id/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/is/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/is/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/it/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/it/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ja/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ja/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ka/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ka/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kk/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/kn/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ko/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ko/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ky/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ky/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lt/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lv/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/lv/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mi/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mk/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mn/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mr/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ms/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ms/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/mt/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nb/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nb/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nl/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/nn/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pl/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-BR/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-BR/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-PT/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt-PT/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/pt/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/qu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/qu/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ro/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ro/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ru/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ru/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sa/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sa/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/se/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/se/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sk/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sl/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sq/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sq/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sr/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sv/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sv/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sw/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/sw/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ta/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ta/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/te/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/te/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/th/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/th/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tj/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tj/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tl/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tl/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tn/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tn/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tr/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tr/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ts/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ts/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tt/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/tt/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/uk/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/uk/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ur/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/ur/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/vi/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/vi/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-CN/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-CN/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-TW/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zh-TW/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zu/kveditable.php" afterPath="$PROJECT_DIR$/vendor/kartik-v/yii2-editable/messages/zu/kveditable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/yiisoft/extensions.php" afterPath="$PROJECT_DIR$/vendor/yiisoft/extensions.php" />
     </list>
     <ignored path="crm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,86 +119,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthItem.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/models/AuthItem.php">
+      <file leaf-file-name="m130524_201442_init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/console/migrations/m130524_201442_init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-687">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+            <state relative-caret-position="861">
+              <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-691">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding>
-                <element signature="e#66#94#0#PHP" expanded="true" />
+                <marker date="1485528919005" expanded="true" signature="1805:1811" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_columns.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_columns.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#26#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/auth-rule/_form.php">
+        <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/auth-item/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/auth-assignment/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+            <state relative-caret-position="273">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="e#6#27#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_columns.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/auth-assignment/_columns.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_columns.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/auth-item/_columns.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +180,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="host" target-branch="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -128,8 +189,6 @@
         <option value="$PROJECT_DIR$/git.txt" />
         <option value="$PROJECT_DIR$/nour.txt" />
         <option value="$PROJECT_DIR$/notes.txt" />
-        <option value="$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/.gitignore" />
         <option value="$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/BootMaterialCssAsset.php" />
         <option value="$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/BootMaterialJsAsset.php" />
@@ -156,6 +215,20 @@
         <option value="$PROJECT_DIR$/backend/views/auth-item/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/auth-rule/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170124_185946_create_customer.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170124_203254_create_customer_type.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170124_203914_create_customer.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170125_102855_create_car.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170125_102855_create_car_brand.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170124_203557_create_attachment.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170125_182637_crerate_email.php" />
+        <option value="$PROJECT_DIR$/console/migrations/m170125_190431_create_car_model.php" />
+        <option value="$PROJECT_DIR$/backend/views/Attachment/_form.php" />
+        <option value="$PROJECT_DIR$/backend/views/Attachment/_columns.php" />
+        <option value="$PROJECT_DIR$/backend/views/viechle-brand/_form.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/backend/views/viechle-brand/_columns.php" />
       </list>
     </option>
   </component>
@@ -198,7 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,6 +299,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -248,26 +334,8 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="viechle-brand" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,16 +354,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth-rule" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,14 +370,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
+    <property name="SearchEverywhereHistoryKey" value="compo&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;mi&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m130524_201442_init.php&#10;composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\crm\common" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\crm\backend\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\crm\common" />
     </key>
   </component>
   <component name="RunManager">
@@ -366,6 +431,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="" />
@@ -376,7 +444,10 @@
       <workItem from="1484859599757" duration="3413000" />
       <workItem from="1484903821018" duration="249000" />
       <workItem from="1484904194472" duration="22414000" />
-      <workItem from="1484944517050" duration="12844000" />
+      <workItem from="1484944517050" duration="13457000" />
+      <workItem from="1485284290008" duration="5907000" />
+      <workItem from="1485368521475" duration="3371000" />
+      <workItem from="1485524707675" duration="7852000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1484907563744</created>
@@ -476,11 +547,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484959639942</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="auth crud">
+      <created>1485008708260</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1485008708260</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38920000" />
+    <option name="totallyTimeSpent" value="56663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1289" height="784" extended-state="6" />
@@ -488,20 +566,20 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33150038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33382788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33382788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -529,151 +607,18 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="remove unuseful branch" />
     <MESSAGE value="Role managment crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="Role managment crud" />
+    <MESSAGE value="auth crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth crud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/migrations/m130524_201442_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/web/assets/2acd1bc6/css/bootstrap-material-design.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7544">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/runtime/debug/5881e954acf16.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="294">
-            <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/params.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/params-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/BootMaterialCssAsset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/extensions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/BootMaterialJsAsset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/romdim/yii2-bootstrap-material/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/installed.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66465">
-          <caret line="3165" column="10" selection-start-line="3165" selection-start-column="10" selection-end-line="3165" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="72" column="3" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-399">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-287">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,9 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484954814588" expanded="true" signature="1785:1791" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="53" column="14" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,13 +773,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
           <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/models/AuthItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -867,41 +788,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/auth-rule/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="315">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/auth-item/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="420">
           <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/auth-assignment/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -925,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,16 +833,161 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170120_140325_extend_user.php" />
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170124_185946_create_customer.php" />
+    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <folding>
+            <element signature="e#66#94#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170125_190431_create_car_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170125_182637_crerate_email.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        <state relative-caret-position="273">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/auth-assignment/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170124_203557_create_attachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170125_102855_create_car.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/Attachment/_columns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="42" column="73" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/Attachment/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="16" />
           <folding>
-            <element signature="e#66#94#0#PHP" expanded="true" />
+            <element signature="e#6#27#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170124_203914_create_customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/CustomerQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m170124_203254_create_customer_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="11" selection-start-line="8" selection-start-column="8" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="51" column="93" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/migrations/m130524_201442_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="e#6#27#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-691">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <marker date="1485528919005" expanded="true" signature="1805:1811" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/viechle-brand/_columns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#26#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

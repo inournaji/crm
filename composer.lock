@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1c34717baaec2841592ce0ca77af77a7",
-    "content-hash": "1fae18f00233b006cde2307956c6a261",
+    "hash": "5df56928b445e0df801b85260bc26414",
+    "content-hash": "7735812924201c3c6f2981fa7781b2d6",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -903,7 +903,7 @@
         },
         {
             "name": "kartik-v/yii2-editable",
-            "version": "v1.7.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-editable.git",
@@ -4356,7 +4356,8 @@
         "kartik-v/yii2-date-range": 20,
         "kartik-v/yii2-helpers": 20,
         "kartik-v/yii2-widget-datepicker": 20,
-        "kartik-v/yii2-grid": 20
+        "kartik-v/yii2-grid": 20,
+        "kartik-v/yii2-editable": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
