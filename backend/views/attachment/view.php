@@ -1,5 +1,6 @@
 <?php
 
+
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */

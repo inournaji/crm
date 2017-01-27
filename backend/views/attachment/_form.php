@@ -31,6 +31,7 @@ use kartik\select2\Select2;
         'options' => ['placeholder' => 'Select a state ...'],
         'pluginOptions' => [
             'allowClear' => true
+
         ],
     ])*/ ?> !-->
 

@@ -33,7 +33,8 @@ CrudAsset::register($this);
                     '{toggleData}'.
                     '{export}'
                 ],
-            ],          
+            ],
+
             'striped' => true,
             'condensed' => true,
             'responsive' => true,          
