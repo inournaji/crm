@@ -28,9 +28,9 @@
         <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="121">
-              <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+              <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
               <folding>
-                <marker date="1485547865009" expanded="true" signature="2722:2779" ph="..." />
+                <marker date="1485547910210" expanded="true" signature="2722:2779" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,7 +85,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="host" target-branch="master" />
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -352,7 +352,7 @@
       <workItem from="1484944517050" duration="13457000" />
       <workItem from="1485284290008" duration="5907000" />
       <workItem from="1485368521475" duration="3371000" />
-      <workItem from="1485524707675" duration="10685000" />
+      <workItem from="1485524707675" duration="10730000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1484907563744</created>
@@ -473,11 +473,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485547663071</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix&#10;">
+      <created>1485547872814</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1485547872814</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59496000" />
+    <option name="totallyTimeSpent" value="59541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1289" height="784" extended-state="6" />
@@ -529,7 +536,8 @@
     <MESSAGE value="auth crud" />
     <MESSAGE value="lookyos crud" />
     <MESSAGE value="lookups crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="lookups crud" />
+    <MESSAGE value="fix&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -905,9 +913,9 @@
     <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
-          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
           <folding>
-            <marker date="1485547865009" expanded="true" signature="2722:2779" ph="..." />
+            <marker date="1485547910210" expanded="true" signature="2722:2779" ph="..." />
           </folding>
         </state>
       </provider>

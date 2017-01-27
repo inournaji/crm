@@ -43,7 +43,7 @@ AppAsset::register($this);
     if (isset($userRole['admin'])) {
         $menuItems [] = ['label' => 'Administration',
             'items' => [
-                ['label' => 'Attachments', 'url' => ['/Attachment']],
+                ['label' => 'Attachments', 'url' => ['/attachment']],
                 ['label' => 'Customers', 'url' => ['/customer']],
                 ['label' => 'Emails', 'url' => ['/email']],
             ]
