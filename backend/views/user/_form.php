@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use \kartik\file\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\User */
@@ -20,10 +21,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'status')->widget(\kartik\switchinput\SwitchInput::className(), [
-        'pluginOptions' => [
-            'onText' => 'Active',
-            'offText' => 'Inactive',
-        ]
+
     ])?>
 
     <?= $form->field($model, 'tel')->textInput(['maxlength' => true]) ?>
@@ -40,8 +38,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'short_id')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'logo')->textInput(['maxlength' => true]) ?>
-
+    <?= $form->field($model, 'tmp_logo')->widget(FileInput::classname(), [
+        'options' => ['accept' => 'image/*'],
+        'pluginOptions' => [
+            'showRemove' => false,
+            'showUpload' => false,
+            // Html::img("backend/uploads/" . $model->profile_pic)
+            'overwriteInitial'=>true
+        ]
+    ]);?>
   
 	<?php if (!Yii::$app->request->isAjax){ ?>
 	  	<div class="form-group">

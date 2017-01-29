@@ -6,6 +6,8 @@ use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
+use yii\web\UploadedFile;
+
 
 /**
  * User model
@@ -35,6 +37,8 @@ class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
+    public $tmp_logo;
+
 
 
     /**
@@ -225,8 +229,63 @@ class User extends ActiveRecord implements IdentityInterface
             'logo' => Yii::t('app', 'Logo'),
         ];
     }
-   /* public function beforeSave($insert)
+    public function uploadImage($image)
     {
+        // get the uploaded file instance. for multiple file uploads
+        // the following data will return an array (you may need to use
+        // getInstances method)
+        $tmpimage = UploadedFile::getInstance($this, $image);
 
-    }*/
+        //$this->$image = $tmpimage;
+
+        // if no image was uploaded abort the upload
+        if (empty($tmpimage)) {
+            return false;
+        }
+
+        // store the source file name
+        //$this->filename = $tmpimage->name;
+        $ext = end((explode(".", $tmpimage->name)));
+
+        // generate a unique file name
+        $tmpimage->name = Yii::$app->security->generateRandomString() . ".{$ext}";
+
+        // the uploaded image instance
+        return $tmpimage;
+    }
+    public function getImageFile($image)
+    {
+        return  Yii::$app->params['upload_dir'] . $image->name ;
+    }
+    public function saveImage($image)
+    {
+        $tmp =$this->uploadImage($image);
+        $path = $this->getImageFile($tmp);
+        $tmp->saveAs($path);
+        return  $tmp->name;
+
+    }
+
+    public  function beforeValidate()
+    {
+        if($this->isNewRecord){
+            $this->created_at = $this->updated_at =  strtotime('now');
+        }else
+        {
+            $this->updated_at =  strtotime('now');
+
+        }
+
+        if(isset($_FILES['User']['name'])) {
+            $files = $_FILES['User']['name'];
+            if ($files['tmp_logo'] != "") {
+                $this->logo = $this->saveImage('tmp_logo');
+            }
+        }
+        return Parent::beforeValidate();
+    }
+    public function beforeSave($insert)
+    {
+       return Parent::beforeSave();
+    }
 }
