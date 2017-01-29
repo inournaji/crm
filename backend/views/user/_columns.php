@@ -2,48 +2,42 @@
 use yii\helpers\Url;
 use kartik\grid\GridView;
 use yii\helpers\ArrayHelper;
-use common\models\AuthItem;
-use common\models\AuthRule;
 
 
 return [
-    /*[
+    [
         'class' => 'kartik\grid\CheckboxColumn',
         'width' => '20px',
     ],
     [
         'class' => 'kartik\grid\SerialColumn',
         'width' => '30px',
-    ],*/
-        [
+    ],
+    [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'name',
-        'filterType'=>GridView::FILTER_SELECT2,
-        'filter'=>ArrayHelper::map(AuthItem::find()->orderBy('name')->asArray()->all(), 'name', 'name'),
+        'attribute'=>'username',
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'email',
+    ],
+     [
+         'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'status',
+         'value' => function($data){
+             if ($data->status == 0 )
+                 return 'Blocked';
+             return 'Active';
 
-        ],
-    [
-        'class'=>'kartik\grid\BooleanColumn',
-        'attribute'=>'type',
-        'vAlign'=>'middle',
+         },
         'filterType'=>GridView::FILTER_SELECT2,
+        'filter'=>[10=> 'Active' , 0 => 'Blocked']
 
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'description',
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'rule_name',
-        'filterType'=>GridView::FILTER_SELECT2,
-        'filter'=>ArrayHelper::map(AuthRule::find()->orderBy('name')->asArray()->all(), 'name', 'name'),
-
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'data',
-    ],
+     ],
+     [
+     'class'=>'\kartik\grid\DataColumn',
+     'attribute'=>'company',
+     ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',
         // 'attribute'=>'created_at',
@@ -51,6 +45,46 @@ return [
     // [
         // 'class'=>'\kartik\grid\DataColumn',
         // 'attribute'=>'updated_at',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'first_name',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'last_name',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'tel',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'fax',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'houseno',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'postal',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'city',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'company',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'short_id',
+    // ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'logo',
     // ],
     [
         'class' => 'kartik\grid\ActionColumn',

@@ -1,5 +1,9 @@
 <?php
 use yii\helpers\Url;
+use kartik\grid\GridView;
+use yii\helpers\ArrayHelper;
+use common\models\CustomerType;
+
 
 return [
     [
@@ -10,10 +14,6 @@ return [
         'class' => 'kartik\grid\SerialColumn',
         'width' => '30px',
     ],
-        // [
-        // 'class'=>'\kartik\grid\DataColumn',
-        // 'attribute'=>'id',
-    // ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'type',

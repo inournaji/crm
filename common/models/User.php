@@ -20,6 +20,16 @@ use yii\web\IdentityInterface;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $tel
+ * @property string $fax
+ * @property string $houseno
+ * @property string $postal
+ * @property string $city
+ * @property string $company
+ * @property string $short_id
+ * @property string $logo
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -53,6 +63,11 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            [['username', 'email', 'created_at', 'updated_at', 'first_name', 'last_name', 'tel', 'houseno'], 'required'],
+            [['status', 'created_at', 'updated_at'], 'integer'],
+            [['username', 'password_hash', 'password_reset_token', 'email', 'houseno', 'company', 'short_id', 'logo'], 'string', 'max' => 255],
+            [['first_name', 'last_name', 'tel', 'fax', 'postal', 'city'], 'string', 'max' => 50],
+            [['username','email','password_reset_token'], 'unique'],
         ];
     }
 
@@ -186,4 +201,32 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+    public function attributeLabels()
+    {
+        return [
+            'id' => Yii::t('app', 'ID'),
+            'username' => Yii::t('app', 'Username'),
+            'auth_key' => Yii::t('app', 'Auth Key'),
+            'password_hash' => Yii::t('app', 'Password Hash'),
+            'password_reset_token' => Yii::t('app', 'Password Reset Token'),
+            'email' => Yii::t('app', 'Email'),
+            'status' => Yii::t('app', 'Status'),
+            'created_at' => Yii::t('app', 'Created At'),
+            'updated_at' => Yii::t('app', 'Updated At'),
+            'first_name' => Yii::t('app', 'First Name'),
+            'last_name' => Yii::t('app', 'Last Name'),
+            'tel' => Yii::t('app', 'Tel'),
+            'fax' => Yii::t('app', 'Fax'),
+            'houseno' => Yii::t('app', 'Houseno'),
+            'postal' => Yii::t('app', 'Postal'),
+            'city' => Yii::t('app', 'City'),
+            'company' => Yii::t('app', 'Company'),
+            'short_id' => Yii::t('app', 'Short ID'),
+            'logo' => Yii::t('app', 'Logo'),
+        ];
+    }
+   /* public function beforeSave($insert)
+    {
+
+    }*/
 }

@@ -26,15 +26,15 @@ class m170125_190431_create_car_model extends Migration
             'facebook' => $this->string(),
             'attachment' => $this->integer(10),
             'type' => $this->integer(10),
-            'created_at' => $this->integer()->notNull(),
-            'updated_at' => $this->integer()->notNull(),
+            'created_at' => $this->integer(10),
+            'updated_at' => $this->integer(10),
         ]);
 
     }
 
     public function down()
     {
-
+        $this->dropTable('car');
     }
 
     /*

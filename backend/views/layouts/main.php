@@ -46,6 +46,7 @@ AppAsset::register($this);
                 ['label' => 'Attachments', 'url' => ['/attachment']],
                 ['label' => 'Customers', 'url' => ['/customer']],
                 ['label' => 'Emails', 'url' => ['/email']],
+                ['label' => 'Users', 'url' => ['/user']],
             ]
         ];
         $menuItems [] = ['label' => 'Settings',

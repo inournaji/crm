@@ -1,5 +1,9 @@
 <?php
 use yii\helpers\Url;
+use kartik\grid\GridView;
+use yii\helpers\ArrayHelper;
+use common\models\User;
+
 
 return [
     /*[
@@ -19,6 +23,14 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'user_id',
         'label' => 'User',
+        'value' => function($data){
+          $user =  User::findOne($data->user_id);
+            return $user->email;
+
+        },
+        'filterType'=>GridView::FILTER_SELECT2,
+        'filter'=>ArrayHelper::map(User::find()->asArray()->all(), 'id', 'email'),
+
     ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',

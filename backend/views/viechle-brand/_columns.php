@@ -1,10 +1,13 @@
 <?php
 use yii\helpers\Url;
-
+use yii\helpers\ArrayHelper;
+use kartik\grid\GridView;
+use common\models\ViechleBrand;
 return [
     [
         'class' => 'kartik\grid\CheckboxColumn',
         'width' => '20px',
+
     ],
     [
         'class' => 'kartik\grid\SerialColumn',
@@ -17,27 +20,24 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'name',
+        'filterType'=>GridView::FILTER_SELECT2,
+        'filter'=>ArrayHelper::map(ViechleBrand::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
+
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'code',
+        'filterType'=>GridView::FILTER_SELECT2,
+        'filter'=>ArrayHelper::map(ViechleBrand::find()->orderBy('name')->asArray()->all(), 'id', 'code'),
+
     ],
     [
-
-        'class'=>'\kartik\grid\DataColumn',
+        'class'=>'kartik\grid\BooleanColumn',
         'attribute'=>'status',
+        'vAlign'=>'middle',
+        'filterType'=>GridView::FILTER_SELECT2,
+
     ],
-    /*[
-        'class'=>'kartik\grid\EditableColumn',
-        'attribute'=>'status',
-        'editableOptions'=>[
-            'header'=>'Status',
-            'inputType'=>\kartik\editable\Editable::INPUT_SWITCH,
-            'options'=>['pluginOptions'=>['onText' => 'Active', 'offText' => 'Inactive',]]
-        ],
-
-        'pageSummary'=>true
-    ],*/
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,

@@ -1,5 +1,8 @@
 <?php
 use yii\helpers\Url;
+use kartik\grid\GridView;
+use yii\helpers\ArrayHelper;
+use common\models\AuthRule;
 
 return [
     /*[
@@ -13,7 +16,10 @@ return [
         [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'name',
-    ],
+        'filterType'=>GridView::FILTER_SELECT2,
+        'filter'=>ArrayHelper::map(AuthRule::find()->orderBy('name')->asArray()->all(), 'name', 'name'),
+
+        ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'data',
