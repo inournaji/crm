@@ -40,6 +40,11 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
     ];
+    if (isset($userRole['admin']) ||isset($userRole['owner']) ) {
+        $menuItems = [
+            ['label' => 'Cars', 'url' => ['/car']],
+        ];
+    }
     if (isset($userRole['admin'])) {
         $menuItems [] = ['label' => 'Administration',
             'items' => [
