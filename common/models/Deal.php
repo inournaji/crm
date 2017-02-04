@@ -8,7 +8,8 @@ use Yii;
  * This is the model class for table "deal".
  *
  * @property integer $id
- * @property integer $car
+ * @property integer $brand
+ * @property string $model
  * @property string $description
  * @property string $km
  * @property string $operation_date
@@ -23,7 +24,7 @@ use Yii;
  * @property integer $updated_at
  *
  * @property Attachment $attachment0
- * @property Car $car0
+ * @property ViechleBrand $brand0
  */
 class Deal extends \yii\db\ActiveRecord
 {
@@ -41,12 +42,12 @@ class Deal extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['car', 'km', 'operation_date', 'validity', 'type', 'attachment', 'created_at', 'updated_at'], 'integer'],
+            [['brand', 'km', 'operation_date', 'validity', 'type', 'attachment', 'created_at', 'updated_at'], 'integer'],
             [['description', 'features'], 'string'],
             [['deposit', 'price'], 'number'],
-            [['link'], 'string', 'max' => 255],
+            [['model', 'link'], 'string', 'max' => 255],
             [['attachment'], 'exist', 'skipOnError' => true, 'targetClass' => Attachment::className(), 'targetAttribute' => ['attachment' => 'id']],
-            [['car'], 'exist', 'skipOnError' => true, 'targetClass' => Car::className(), 'targetAttribute' => ['car' => 'id']],
+            [['brand'], 'exist', 'skipOnError' => true, 'targetClass' => ViechleBrand::className(), 'targetAttribute' => ['brand' => 'id']],
         ];
     }
 
@@ -57,7 +58,8 @@ class Deal extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'car' => Yii::t('app', 'Car'),
+            'brand' => Yii::t('app', 'Brand'),
+            'model' => Yii::t('app', 'Model'),
             'description' => Yii::t('app', 'Description'),
             'km' => Yii::t('app', 'Km'),
             'operation_date' => Yii::t('app', 'Operation Date'),
@@ -84,9 +86,9 @@ class Deal extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getCar0()
+    public function getBrand0()
     {
-        return $this->hasOne(Car::className(), ['id' => 'car']);
+        return $this->hasOne(ViechleBrand::className(), ['id' => 'brand']);
     }
 
     /**

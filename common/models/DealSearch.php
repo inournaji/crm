@@ -18,8 +18,8 @@ class DealSearch extends Deal
     public function rules()
     {
         return [
-            [['id', 'car', 'km', 'operation_date', 'validity', 'type', 'attachment', 'created_at', 'updated_at'], 'integer'],
-            [['description', 'link', 'features'], 'safe'],
+            [['id', 'brand', 'km', 'operation_date', 'validity', 'type', 'attachment', 'created_at', 'updated_at'], 'integer'],
+            [['model', 'description', 'link', 'features'], 'safe'],
             [['deposit', 'price'], 'number'],
         ];
     }
@@ -58,7 +58,7 @@ class DealSearch extends Deal
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'car' => $this->car,
+            'brand' => $this->brand,
             'km' => $this->km,
             'operation_date' => $this->operation_date,
             'deposit' => $this->deposit,
@@ -70,7 +70,8 @@ class DealSearch extends Deal
             'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'description', $this->description])
+        $query->andFilterWhere(['like', 'model', $this->model])
+            ->andFilterWhere(['like', 'description', $this->description])
             ->andFilterWhere(['like', 'link', $this->link])
             ->andFilterWhere(['like', 'features', $this->features]);
 

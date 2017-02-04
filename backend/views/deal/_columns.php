@@ -16,7 +16,11 @@ return [
     // ],
     [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'car',
+        'attribute'=>'brand',
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'model',
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
@@ -30,10 +34,10 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'operation_date',
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'deposit',
-    ],
+    // [
+        // 'class'=>'\kartik\grid\DataColumn',
+        // 'attribute'=>'deposit',
+    // ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',
         // 'attribute'=>'price',

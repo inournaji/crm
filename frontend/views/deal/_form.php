@@ -11,7 +11,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'car')->textInput() ?>
+    <?= $form->field($model, 'brand')->textInput() ?>
+
+    <?= $form->field($model, 'model')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 

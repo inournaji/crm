@@ -8,7 +8,8 @@ class m170203_163415_create_deals extends Migration
     {
         $this->createTable('deal', [
             'id' => $this->primaryKey(),
-            'car' => $this->integer(10),
+            'brand' => $this->integer(),
+            'model' => $this->string(),
             'description' => $this->text(),
             'km' => $this->integer()->unsigned()->unsigned(),
             'operation_date' => $this->integer()->unsigned(),
@@ -23,7 +24,7 @@ class m170203_163415_create_deals extends Migration
             'updated_at' => $this->integer(10),
         ]);
 
-        $this->addForeignKey('fk_deal_car','deal','car','car','id',null,null);
+        $this->addForeignKey('fk_deal_car','deal','brand','viechle_brand','id',null,null);
         $this->addForeignKey('fk_deal_attachment','deal','attachment','attachment','id',null,null);
 
 
