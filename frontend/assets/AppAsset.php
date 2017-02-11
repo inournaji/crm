@@ -11,6 +11,7 @@ class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
+
     public $css = [
         'css/site.css',
     ];
@@ -18,8 +19,12 @@ class AppAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        //'yii\bootstrap\BootstrapAsset',
         'romdim\bootstrap\material\BootMaterialCssAsset',
         'romdim\bootstrap\material\BootMaterialJsAsset'
+        //'yii\bootstrap\BootstrapAsset',
     ];
+
+    public $jsOptions = array(
+        'position' => \yii\web\View::POS_HEAD
+    );
 }

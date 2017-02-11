@@ -20,7 +20,7 @@ use \kartik\file\FileInput;
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'status')->widget(\kartik\switchinput\SwitchInput::className(), [
+    <?= $form->field($model, 'status')->dropDownList($model->getStatusList(), [
 
     ])?>
 

@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+use yii\helpers\Html;
 
 return [
     [
@@ -85,6 +86,28 @@ return [
                           'data-toggle'=>'tooltip',
                           'data-confirm-title'=>'Are you sure?',
                           'data-confirm-message'=>'Are you sure want to delete this item'], 
+    ],
+    [
+        'class' => 'kartik\grid\ActionColumn',
+        'template' => '{phone}',
+        'dropdown' => false,
+        'vAlign'=>'middle',
+        'options'=>['role'=>'modal-remote','title'=>'View','data-toggle'=>'tooltip'],
+
+        'urlCreator' => function($action, $model, $key, $index) {
+            return Url::to([$action,'id'=>$key]);
+        },
+        'buttons' => [
+            'phone' => function ($action,$model, $key) {
+                $path = urlencode($action);
+                return Html::a('<span class="glyphicon glyphicon-info-sign"></span>', $action, [
+                    'title' => Yii::t('app', 'Phone'),
+                    'data-pjax'=> '1',
+                    'role'=>'modal-remote',
+                    'data-toggle'=>'tooltip'
+                ]);
+            }
+        ],
     ],
 
 ];   

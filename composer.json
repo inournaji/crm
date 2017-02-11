@@ -30,7 +30,10 @@
         "kartik-v/yii2-helpers": "dev-master",
         "kartik-v/yii2-widget-datepicker": "@dev",
         "kartik-v/yii2-grid": "@dev",
-        "kartik-v/yii2-editable": "@dev"
+        "kartik-v/yii2-editable": "@dev",
+        "bower-asset/sweetalert": "^1.1",
+        "yii2mod/yii2-sweet-alert": "*",
+        "kartik-v/yii2-detail-view": "^1.7"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

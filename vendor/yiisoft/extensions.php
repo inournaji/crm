@@ -148,15 +148,6 @@ return array (
       '@kartik/switchinput' => $vendorDir . '/kartik-v/yii2-widget-switchinput',
     ),
   ),
-  'kartik-v/yii2-widget-select2' => 
-  array (
-    'name' => 'kartik-v/yii2-widget-select2',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@kartik/select2' => $vendorDir . '/kartik-v/yii2-widget-select2',
-    ),
-  ),
   'kartik-v/yii2-widget-datepicker' => 
   array (
     'name' => 'kartik-v/yii2-widget-datepicker',
@@ -192,6 +183,33 @@ return array (
     'alias' => 
     array (
       '@kartik/grid' => $vendorDir . '/kartik-v/yii2-grid',
+    ),
+  ),
+  'yii2mod/yii2-sweet-alert' => 
+  array (
+    'name' => 'yii2mod/yii2-sweet-alert',
+    'version' => '1.2.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/alert' => $vendorDir . '/yii2mod/yii2-sweet-alert',
+    ),
+  ),
+  'kartik-v/yii2-detail-view' => 
+  array (
+    'name' => 'kartik-v/yii2-detail-view',
+    'version' => '1.7.5.0',
+    'alias' => 
+    array (
+      '@kartik/detail' => $vendorDir . '/kartik-v/yii2-detail-view',
+    ),
+  ),
+  'kartik-v/yii2-widget-select2' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-select2',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/select2' => $vendorDir . '/kartik-v/yii2-widget-select2',
     ),
   ),
   'kartik-v/yii2-editable' => 

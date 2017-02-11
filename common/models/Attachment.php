@@ -2,7 +2,9 @@
 
 namespace common\models;
 
+use common\helpers\GeneralHelper;
 use Yii;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "attachment".
@@ -16,6 +18,8 @@ use Yii;
  */
 class Attachment extends \yii\db\ActiveRecord
 {
+    public $photo;
+    public $file_name;
     /**
      * @inheritdoc
      */
@@ -30,9 +34,10 @@ class Attachment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'file'], 'required'],
+            [['name'], 'required'],
             [['name', 'file'], 'string', 'max' => 255],
             [['type'], 'string', 'max' => 50],
+            [['photo'], 'file', 'extensions' => 'jpg, gif, png'],
             [['name'], 'unique'],
         ];
     }
@@ -65,5 +70,26 @@ class Attachment extends \yii\db\ActiveRecord
     public static function find()
     {
         return new AttachmentQuery(get_called_class());
+    }
+
+    public function beforeSave($insert)
+    {
+        $file = UploadedFile::getInstance($this, 'photo');
+        if ($file != null && !empty(($file))) {
+            $this->file_name = Yii::$app->security->generateRandomString() . "." . $file->extension;
+            $file->saveAs(GeneralHelper::getTempFolderPath(). $this->file_name );
+            $this->file = "upload/attachment/" . $this->file_name;
+        }
+        return parent::beforeSave($insert);
+    }
+
+    public function afterSave($insert, $changedAttributes)
+    {
+        if ($this->file_name != null)
+            if (file_exists((GeneralHelper::getTempFolderPath() . $this->file_name))) {
+                copy(GeneralHelper::getTempFolderPath() . $this->file_name, GeneralHelper::getUploadFolderPath() . "attachment" . DIRECTORY_SEPARATOR . $this->file_name);
+                unlink(GeneralHelper::getTempFolderPath() . $this->file_name);
+            }
+        parent::afterSave($insert, $changedAttributes);
     }
 }

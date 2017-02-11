@@ -36,9 +36,13 @@ use yii\web\UploadedFile;
 class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
+    const STATUS_INACTIVE = 1;
     const STATUS_ACTIVE = 10;
     public $tmp_logo;
 
+    const SCENARIO_NO_PASSWORD = "no_passowrd";
+
+    public $password_repeat;
 
 
     /**
@@ -66,12 +70,13 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
             [['username', 'email', 'created_at', 'updated_at', 'first_name', 'last_name', 'tel', 'houseno'], 'required'],
             [['status', 'created_at', 'updated_at'], 'integer'],
             [['username', 'password_hash', 'password_reset_token', 'email', 'houseno', 'company', 'short_id', 'logo'], 'string', 'max' => 255],
             [['first_name', 'last_name', 'tel', 'fax', 'postal', 'city'], 'string', 'max' => 50],
-            [['username','email','password_reset_token'], 'unique'],
+            [['username', 'email', 'password_reset_token'], 'unique', 'on' => self::SCENARIO_NO_PASSWORD],
+            ['password_repeat', 'compare', 'compareAttribute' => 'password_hash', 'message' => "Passwords don't match"],
         ];
     }
 
@@ -100,6 +105,17 @@ class User extends ActiveRecord implements IdentityInterface
     public static function findByUsername($username)
     {
         return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+    }
+
+    /**
+     * Finds user by username
+     *
+     * @param string $username
+     * @return static|null
+     */
+    public static function findByEmail($email)
+    {
+        return static::findOne(['email' => $email, 'status' => self::STATUS_ACTIVE]);
     }
 
     /**
@@ -132,7 +148,7 @@ class User extends ActiveRecord implements IdentityInterface
             return false;
         }
 
-        $timestamp = (int) substr($token, strrpos($token, '_') + 1);
+        $timestamp = (int)substr($token, strrpos($token, '_') + 1);
         $expire = Yii::$app->params['user.passwordResetTokenExpire'];
         return $timestamp + $expire >= time();
     }
@@ -205,6 +221,7 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+
     public function attributeLabels()
     {
         return [
@@ -229,6 +246,7 @@ class User extends ActiveRecord implements IdentityInterface
             'logo' => Yii::t('app', 'Logo'),
         ];
     }
+
     public function uploadImage($image)
     {
         // get the uploaded file instance. for multiple file uploads
@@ -253,30 +271,31 @@ class User extends ActiveRecord implements IdentityInterface
         // the uploaded image instance
         return $tmpimage;
     }
+
     public function getImageFile($image)
     {
-        return  Yii::$app->params['upload_dir'] . $image->name ;
+        return Yii::$app->params['upload_dir'] . $image->name;
     }
+
     public function saveImage($image)
     {
-        $tmp =$this->uploadImage($image);
+        $tmp = $this->uploadImage($image);
         $path = $this->getImageFile($tmp);
         $tmp->saveAs($path);
-        return  $tmp->name;
+        return $tmp->name;
 
     }
 
-    public  function beforeValidate()
+    public function beforeValidate()
     {
-        if($this->isNewRecord){
-            $this->created_at = $this->updated_at =  strtotime('now');
-        }else
-        {
-            $this->updated_at =  strtotime('now');
+        if ($this->isNewRecord) {
+            $this->created_at = $this->updated_at = strtotime('now');
+        } else {
+            $this->updated_at = strtotime('now');
 
         }
 
-        if(isset($_FILES['User']['name'])) {
+        if (isset($_FILES['User']['name'])) {
             $files = $_FILES['User']['name'];
             if ($files['tmp_logo'] != "") {
                 $this->logo = $this->saveImage('tmp_logo');
@@ -284,8 +303,21 @@ class User extends ActiveRecord implements IdentityInterface
         }
         return Parent::beforeValidate();
     }
+
     public function beforeSave($insert)
     {
-       return Parent::beforeSave();
+        if ($this->scenario == self::SCENARIO_NO_PASSWORD) {
+            $this->password_hash = $this->password_repeat = "123456";
+            $this->setPassword($this->password_hash);
+            $this->status = self::STATUS_INACTIVE;
+        }
+        return Parent::beforeSave($insert);
+    }
+
+    public function getStatusList() {
+        return [
+            self::STATUS_ACTIVE => "Active",
+            self::STATUS_INACTIVE => "Inactive"
+        ];
     }
 }

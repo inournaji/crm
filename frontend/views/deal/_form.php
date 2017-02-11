@@ -1,6 +1,8 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use kartik\select2\Select2;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Deal */
@@ -10,8 +12,13 @@ use yii\widgets\ActiveForm;
 <div class="deal-form">
 
     <?php $form = ActiveForm::begin(); ?>
-
-    <?= $form->field($model, 'brand')->textInput() ?>
+    <?= $form->field($model, 'brand')->widget(Select2::classname(), [
+        'data' => ArrayHelper::map(\common\models\VehicleBrand::find(['status'=>1])->all(), 'id', 'name'),
+        'options' => ['placeholder' => 'Select brand'],
+        'pluginOptions' => [
+            'allowClear' => TRUE,
+        ],
+    ]) ?>
 
     <?= $form->field($model, 'model')->textInput(['maxlength' => true]) ?>
 
@@ -34,10 +41,6 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'features')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'attachment')->textInput() ?>
-
-    <?= $form->field($model, 'created_at')->textInput() ?>
-
-    <?= $form->field($model, 'updated_at')->textInput() ?>
 
   
 	<?php if (!Yii::$app->request->isAjax){ ?>

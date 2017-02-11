@@ -116,4 +116,14 @@ class Customer extends \yii\db\ActiveRecord
     {
         return new CustomerQuery(get_called_class());
     }
+
+    public function beforeValidate()
+    {
+        if ($this->isNewRecord) {
+            $this->created_at = $this->updated_at = strtotime('now');
+        } else {
+            $this->updated_at = strtotime('now');
+        }
+        return parent::beforeValidate();
+    }
 }
