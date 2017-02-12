@@ -282,7 +282,7 @@ class Deal extends \yii\db\ActiveRecord
             $brand_model->name = $brand;
             $brand_model->save();
         }
-        return $brand_model->id;
+        $this->vehicle_brand_id = $brand_model->id;
     }
 
     public function getSourceInfo($source)
@@ -293,7 +293,7 @@ class Deal extends \yii\db\ActiveRecord
             $source_model->name = $source;
             $source_model->save();
         }
-        return $source_model->id;
+        $this->source_id = $source_model->id;
     }
 
 }

@@ -101,9 +101,9 @@ a.desc:after {
     border: none;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .nav li > form > button.logout {
-        display:block;
+        display: block;
         text-align: left;
         width: 100%;
         padding: 10px 15px;
@@ -134,4 +134,25 @@ a.desc:after {
     text-align: center;
     font-size: 40px;
     color: #8a9e9c;
+}
+
+.detail-table {
+    width: 100%;
+}
+
+.header-tr > th {
+    width: 50%;
+    background-color: #b8d0ce;
+    color: #446764;
+    text-align: center;
+    height: 25px;
+}
+
+.padding {
+    margin: 0px 6px ;
+}
+
+.header-tr .padding {
+    background-color: #b8d0ce;
+    color: #446764;
 }

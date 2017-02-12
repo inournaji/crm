@@ -48,17 +48,24 @@ CrudAsset::register($this);
                                 ['width' => '60px']);
                     },
                 ],
-                'created_date',
+                [
+                    'attribute' => 'created_at',
+                    'value' => function ($data) {
+                        return date("Y-m-d", $data->created_at);
+                    },
+                ],
                 [
                     'attribute' => 'model',
                     'value' => function ($data) {
-                        return $data->model . "/" . $data->km . "/" . $data->km . "/" . $data->validity;
+                        return $data->model . " / " . $data->km . " / " . $data->km . " / " . $data->validity;
                     },
                 ],
                 [
                     'attribute' => 'customer.name',
                     'label' => \Yii::t('app', 'Customer'),
-                    'value' => 'customer.fname'
+                    'value' => function ($data) {
+                        return $data->customer->fname . " " . $data->customer->lname;
+                    },
                 ],
                 [
                     'attribute' => 'customer.company',
@@ -86,7 +93,7 @@ CrudAsset::register($this);
                                         swal({
                                                 title: "Are you sure you want to send and email to the customer to upload his/her credit card info",
                                                 type: "info",
-                                                //showCancelButton: true,
+                                                showCancelButton: true,
                                                 confirmButtonColor: "#41b9be",
                                                 confirmButtonText: "Yes",
                                                 cancelButtonText: "No",
@@ -182,8 +189,8 @@ CrudAsset::register($this);
                 [
                     'class' => 'kartik\grid\ExpandRowColumn',
                     'width' => '50px',
-                    'expandIcon'=>'<span class="glyphicon glyphicon-option-vertical"></span>',
-                    'collapseIcon'=>'<span class="glyphicon glyphicon-option-horizontal">    </span>',
+                    'expandIcon' => '<span class="glyphicon glyphicon-option-vertical"></span>',
+                    'collapseIcon' => '<span class="glyphicon glyphicon-option-horizontal">    </span>',
                     'value' => function ($model, $key, $index, $column) {
                         return GridView::ROW_COLLAPSED;
                     },
@@ -211,7 +218,7 @@ CrudAsset::register($this);
             },
             type: "POST",
             success: function (data) {
-                swal("Ajax request finished!");
+                swal("Your order has been updated successfully!");
             },
         });
     }
@@ -227,7 +234,7 @@ CrudAsset::register($this);
             },
             type: "POST",
             success: function (data) {
-                swal("Ajax request finished!");
+                swal("The email has been sent successfully!");
             },
         });
     }
