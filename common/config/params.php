@@ -2,6 +2,6 @@
 return [
     'adminEmail' => 'amaney@cloudappers.com',
     'supportEmail' => 'support@example.com',
-    'user.passwordResetTokenExpire' => 360000,
-    'deal.attachment_token' => 360000,
+    'user.passwordResetTokenExpire' => 3600,
+    'deal.attachment_token' => 3600,
 ];
