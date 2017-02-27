@@ -45,7 +45,8 @@ class Deal extends \yii\db\ActiveRecord
     {
         return [
             [['customer_id', 'user_id', 'vehicle_brand_id', 'operation_date', 'type', 'attachment_id', 'created_at', 'updated_at'], 'integer'],
-            [['description', 'features', 'validity', 'km'], 'string'],
+            [['description', 'features'], 'string'],
+            [['validity', 'km'], 'safe'],
             [['deposit', 'price'], 'number'],
             [['model', 'link'], 'string', 'max' => 255],
             [['attachment_id'], 'exist', 'skipOnError' => true, 'targetClass' => Attachment::className(), 'targetAttribute' => ['attachment_id' => 'id']],
@@ -234,28 +235,47 @@ class Deal extends \yii\db\ActiveRecord
         switch ($status) {
             case Constants::STATUS_WAITING_CUSTOMER:
                 return [
+                    $this->id . "_" . Constants::STATUS_WAITING_CUSTOMER => Constants::STATUS_WAITING_CUSTOMER_STR,
                     $this->id . "_" . Constants::STATUS_WAITING_CREDIT_CARD => Constants::STATUS_WAITING_CREDIT_CARD_STR,
                 ];
             case Constants::STATUS_WAITING_CREDIT_CARD:
                 return [
+                    $this->id . "_" . Constants::STATUS_WAITING_CREDIT_CARD => Constants::STATUS_WAITING_CREDIT_CARD_STR,
                     $this->id . "_" . Constants::STATUS_WAITING_BANK => Constants::STATUS_WAITING_BANK_STR,
                     $this->id . "_" . Constants::STATUS_WAITING_CUSTOMER => Constants::STATUS_WAITING_CUSTOMER_STR,
                 ];
             case Constants::STATUS_WAITING_BANK:
                 return [
+                    $this->id . "_" . Constants::STATUS_WAITING_BANK => Constants::STATUS_WAITING_BANK_STR,
                     $this->id . "_" . Constants::STATUS_WAITING_CREDIT_CARD => Constants::STATUS_WAITING_CREDIT_CARD_STR,
                     $this->id . "_" . Constants::STATUS_WAITING_CONTRACT => Constants::STATUS_WAITING_CONTRACT_STR,
                 ];
             case Constants::STATUS_WAITING_CONTRACT:
                 return [
+                    $this->id . "_" . Constants::STATUS_WAITING_CONTRACT => Constants::STATUS_WAITING_CONTRACT_STR,
                     $this->id . "_" . Constants::STATUS_WAITING_BANK => Constants::STATUS_WAITING_BANK_STR,
                     $this->id . "_" . Constants::STATUS_Done => Constants::STATUS_Done_STR
                 ];
             case Constants::STATUS_Done:
                 return [
-
+                    $this->id . "_" . Constants::STATUS_Done => Constants::STATUS_Done_STR,
                 ];
         }
+    }
+
+    public function getActiveList()
+    {
+        return [
+            $this->id . "_" . Constants::ACTIVE => Constants::ACTIVE_STR,
+            $this->id . "_" . Constants::IN_ACTIVE => Constants::IN_ACTIVE_STR,
+        ];
+    }
+
+    public function getActiveName()
+    {
+        if($this->is_active)
+            return Constants::ACTIVE_STR;
+        return Constants::IN_ACTIVE_STR;
     }
 
     public function getStatusName()

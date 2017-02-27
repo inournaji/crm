@@ -43,9 +43,10 @@ CrudAsset::register($this);
                     'format' => 'html',
                     'label' => \Yii::t('app', 'Icon'),
                     'value' => function ($data) {
-                        if ($data->source_id != null)
+                        /*if ($data->source_id != null)
                             return Html::img(Yii::$app->homeUrl . $data->source->icon,
-                                ['width' => '60px']);
+                                ['width' => '60px']);*/
+                        return "";
                     },
                 ],
                 [
@@ -218,7 +219,12 @@ CrudAsset::register($this);
             },
             type: "POST",
             success: function (data) {
-                swal("Your order has been updated successfully!");
+                swal({
+                        "title": "Your order has been updated successfully!"
+                    },
+                    function () {
+                        $.pjax.reload({container: "#deal-grid"});
+                    });
             },
         });
     }
@@ -234,7 +240,13 @@ CrudAsset::register($this);
             },
             type: "POST",
             success: function (data) {
-                swal("The email has been sent successfully!");
+                swal({
+                        "title": "The email has been sent successfully!"
+                    },
+                    function () {
+                        $.pjax.reload({container: "#deal-grid"});
+                    });
+
             },
         });
     }

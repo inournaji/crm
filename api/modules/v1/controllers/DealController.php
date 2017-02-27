@@ -14,7 +14,10 @@ use common\models\Source;
 use common\models\User;
 use common\models\VehicleBrand;
 use yii\bootstrap\Html;
+use yii\filters\auth\CompositeAuth;
+use yii\filters\auth\HttpBearerAuth;
 use yii\filters\VerbFilter;
+use yii\helpers\ArrayHelper;
 use yii\rest\ActiveController;
 use yii\web\Response;
 use Yii;
@@ -99,18 +102,17 @@ class DealController extends ActiveController
 
     public function behaviors()
     {
-        return [
-            [
-                'class' => 'yii\filters\ContentNegotiator',
-                'formats' => ['application/json' => Response::FORMAT_JSON]
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'create-deal' => ['post'],
-                ]
+        return ArrayHelper::merge(
+            parent::behaviors(), [
+                'authenticator' => [
+                    'class' => CompositeAuth::className(),
+                    'except' => ['index'],
+                    'authMethods' => [
+                        HttpBearerAuth::className(),
+                    ],
+                ],
             ]
-        ];
+        );
     }
 
 }

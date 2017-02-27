@@ -63,13 +63,26 @@ class DealController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         if (Yii::$app->request->post('hasEditable') || Yii::$app->request->isAjax) {
-            $values = explode("_", Yii::$app->request->post('status'));
+            $status = Yii::$app->request->post('status');
+            $is_active = Yii::$app->request->post('is_active');
+
+            $values = explode("_", (isset($status)) ? $status : $is_active);
             $model = $this->findModel($values[0]);
-            $model->status = $values[1];
+            if (isset($status))
+                $model->status = $values[1];
+
+            if (isset($is_active))
+                $model->is_active = $values[1];
+
             if ($model->save()) {
-                echo json_encode(['output' => $model->getStatusName(), 'message' => ""]);
+                echo json_encode(['output' => (isset($status)) ? $model->getStatusName() : $model->getActiveName(), 'message' => ""]);
+                return;
+            } else {
+                echo json_encode(['output' => (isset($status)) ? $model->getStatusName() : $model->getActiveName(), 'message' => Html::errorSummary($model)]);
                 return;
             }
+
+
         }
 
         return $this->render('index', [
@@ -306,7 +319,7 @@ class DealController extends Controller
 
     public function actionDetail($id = null)
     {
-        $this->render('detail', [
+        echo $this->render('detail', [
             'model' => $this->findModel($id)
         ]);
     }
@@ -377,6 +390,7 @@ class DealController extends Controller
     public function actionChangeStatus()
     {
         $data = Yii::$app->request->post();
+        Yii::error("daaaata " . json_encode($data));
 
         if (isset($data['id']) && isset($data['status'])) {
             $model = $this->findModel($data['id']);
@@ -389,6 +403,19 @@ class DealController extends Controller
         }
         echo 0;
     }
+
+    public function actionDownloadAttachment($id)
+    {
+        $attachment = Attachment::findOne($id);
+        if ($attachment != null) {
+            $path = Yii::getAlias('@webroot') . DIRECTORY_SEPARATOR . $attachment->file;
+
+            if (file_exists($path)) {
+                return Yii::$app->response->sendFile($path);
+            }
+        }
+    }
+
 
     /**
      * Finds the Deal model based on its primary key value.

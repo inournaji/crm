@@ -23,4 +23,8 @@ class Constants
     const STATUS_WAITING_CONTRACT_STR = "Contract";
     const STATUS_Done_STR = "Done";
 
+    const IN_ACTIVE = 0;
+    const ACTIVE = 1;
+    const IN_ACTIVE_STR = "Inactive";
+    const ACTIVE_STR = "Active";
 }

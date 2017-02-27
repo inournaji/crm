@@ -21,7 +21,7 @@ use yii\widgets\DetailView;
         </tr>
         <tr>
             <td>
-                <div class="padding">
+                <div id=<?php echo "deal-".$model->id."-".$model->customer_id ?> class="padding">
                     <?= DetailView::widget([
                         'model' => $model,
                         //'mode' => DetailView::MODE_EDIT,
@@ -38,19 +38,48 @@ use yii\widgets\DetailView;
                             'validity',
                             'type',
                             'link',
+                            [
+                                'attribute' => 'attachment_id',
+                                'format' => "raw",
+                                'value' => ($model->attachment_id != null) ?
+                                    \yii\helpers\Html::a($model->attachment->name,
+                                        \yii\helpers\Url::to(["/deal/download-attachment", "id" => $model->attachment_id],
+                                        [
+                                            'target' => "_blank",
+                                            'data-pjax' => "0"
+                                        ]))
+                                    : "",
+                            ],
                             'features:ntext',
                             [
                                 'attribute' => 'status',
+                                'value' =>
+                                    ($model->status == \common\helpers\Constants::STATUS_Done) ? $model->getStatusName() :
+                                        \kartik\editable\Editable::widget([
+                                            'name' => "status",
+                                            'value' => $model->status,
+                                            'displayValue' => $model->getStatusName(),
+                                            'asPopover' => false,
+                                            'submitOnEnter' => false,
+                                            'valueIfNull' => '-',
+                                            'inputType' => \kartik\editable\Editable::INPUT_DROPDOWN_LIST,
+                                            'data' => $model->getAllowedStatus($model->status),
+                                        ]),
+                                'format' => "raw",
+                            ],
+                            [
+                                'attribute' => 'is_active',
+                                'label'=> "Active",
                                 'value' => \kartik\editable\Editable::widget([
-                                    'name' => "status",
-                                    'value' => $model->status,
-                                    'displayValue' => $model->getStatusName(),
-                                    'asPopover' => false,
-                                    'submitOnEnter' => false,
-                                    'valueIfNull' => '-',
-                                    'inputType' => \kartik\editable\Editable::INPUT_DROPDOWN_LIST,
-                                    'data' => $model->getAllowedStatus($model->status),
-                                ]),
+                                            'name' => "is_active",
+                                            'value' => $model->is_active,
+                                            'displayValue' => $model->getActiveName(),
+                                            'asPopover' => false,
+                                            'submitOnEnter' => false,
+                                            'valueIfNull' => '-',
+                                            'inputType' => \kartik\editable\Editable::INPUT_DROPDOWN_LIST,
+                                            'data' => $model->getActiveList(),
+                                        ]),
                                 'format' => "raw",
                             ],
 
@@ -59,7 +88,7 @@ use yii\widgets\DetailView;
                 </div>
             </td>
             <td>
-                <div class="padding">
+                <div id=<?php echo "deal-".$model->id ?> class="padding">
                     <?= DetailView::widget([
                         'model' => $model->customer,
                         //'mode' => DetailView::MODE_EDIT,
@@ -75,9 +104,7 @@ use yii\widgets\DetailView;
                             'fax',
                             'bank',
                             'iban',
-
-
-
+                            'postal',
                         ]
                     ]); ?>
                 </div>
