@@ -43,7 +43,13 @@ use yii\bootstrap\Modal;
                                 'attribute' => 'attachment_id',
                                 'format' => "raw",
                                 'value' => ($model->attachment_id != null) ?
-                                       Yii::$app->view->render('imageview',['id'=>$model->attachment_id])
+                                     \yii\helpers\Html::a($model->attachment->name,
+                                         \yii\helpers\Url::to(["/deal/download-attachment", "id" => $model->attachment_id],
+                                         [
+                                             'target' => "_blank",
+                                             'data-pjax' => "0"
+                                         ]))
+
                                     : "not uploaded yet",
                             ],
                             'features:ntext',
@@ -67,15 +73,15 @@ use yii\bootstrap\Modal;
                                 'attribute' => 'is_active',
                                 'label'=> "Active",
                                 'value' => \kartik\editable\Editable::widget([
-                                            'name' => "is_active",
-                                            'value' => $model->is_active,
-                                            'displayValue' => $model->getActiveName(),
-                                            'asPopover' => false,
-                                            'submitOnEnter' => false,
-                                            'valueIfNull' => '-',
-                                            'inputType' => \kartik\editable\Editable::INPUT_DROPDOWN_LIST,
-                                            'data' => $model->getActiveList(),
-                                        ]),
+                                    'name' => "is_active",
+                                    'value' => $model->is_active,
+                                    'displayValue' => $model->getActiveName(),
+                                    'asPopover' => false,
+                                    'submitOnEnter' => false,
+                                    'valueIfNull' => '-',
+                                    'inputType' => \kartik\editable\Editable::INPUT_DROPDOWN_LIST,
+                                    'data' => $model->getActiveList(),
+                                ]),
                                 'format' => "raw",
                             ],
 
