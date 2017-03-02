@@ -22,6 +22,7 @@ use yii\web\UploadedFile;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ * @property string $tmp_password
  * @property string $first_name
  * @property string $last_name
  * @property string $tel
@@ -39,6 +40,7 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_INACTIVE = 1;
     const STATUS_ACTIVE = 10;
     public $tmp_logo;
+    public $tmp_password;
 
     const SCENARIO_NO_PASSWORD = "no_passowrd";
 
@@ -74,13 +76,24 @@ class User extends ActiveRecord implements IdentityInterface
             [['username', 'email', 'created_at', 'updated_at', 'first_name', 'last_name', 'tel', 'houseno'], 'required'],
             [['status', 'created_at', 'updated_at'], 'integer'],
             [['username', 'password_hash', 'password_reset_token', 'email', 'houseno', 'company', 'short_id', 'logo'], 'string', 'max' => 255],
-            [['first_name', 'last_name', 'tel', 'fax', 'postal', 'city'], 'string', 'max' => 50],
+            [['tmp_password','first_name', 'last_name', 'tel', 'fax', 'postal', 'city'], 'string', 'max' => 50],
             [['username', 'email', 'password_reset_token'], 'unique', 'on' => self::SCENARIO_NO_PASSWORD],
             ['password_repeat', 'compare', 'compareAttribute' => 'password_hash', 'message' => "Passwords don't match"],
         ];
     }
 
-    /**
+    public function setRole($r_name)
+    {
+        $auth = Yii::$app->authManager;
+        $role = $auth->getRole($r_name);
+        $roles = Yii::$app->authManager->getRolesByUser($this->id);
+        if (!isset($roles[$r_name])) {
+            $auth->assign($role, $this->id);
+        }
+        return;
+    }
+
+    /*
      * @inheritdoc
      */
     public static function findIdentity($id)
@@ -244,6 +257,7 @@ class User extends ActiveRecord implements IdentityInterface
             'company' => Yii::t('app', 'Company'),
             'short_id' => Yii::t('app', 'Short ID'),
             'logo' => Yii::t('app', 'Logo'),
+            'tmp_password' => Yii::t('app', 'Password'),
         ];
     }
 
@@ -288,13 +302,17 @@ class User extends ActiveRecord implements IdentityInterface
 
     public function beforeValidate()
     {
+
         if ($this->isNewRecord) {
             $this->created_at = $this->updated_at = strtotime('now');
+            $this->username = $this->email;
         } else {
             $this->updated_at = strtotime('now');
-
         }
-
+        if($this->tmp_password){
+            $this->setPassword($this->tmp_password);
+            $this->generateAuthKey();
+        }
         if (isset($_FILES['User']['name'])) {
             $files = $_FILES['User']['name'];
             if ($files['tmp_logo'] != "") {

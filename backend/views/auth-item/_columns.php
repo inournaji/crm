@@ -33,17 +33,17 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'description',
     ],
-    [
+   /* [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'rule_name',
         'filterType'=>GridView::FILTER_SELECT2,
         'filter'=>ArrayHelper::map(AuthRule::find()->orderBy('name')->asArray()->all(), 'name', 'name'),
 
-    ],
-    [
+    ],*/
+   /* [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'data',
-    ],
+    ],*/
     // [
         // 'class'=>'\kartik\grid\DataColumn',
         // 'attribute'=>'created_at',

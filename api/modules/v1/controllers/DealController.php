@@ -47,6 +47,8 @@ class DealController extends ActiveController
                     if (!$user->save()) {
                         $is_error_exist = true;
                         $error_message = Html::errorSummary($user);
+                    }else{
+                        $user->setRole('seller');
                     }
                 }
             }

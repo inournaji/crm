@@ -42,6 +42,9 @@ class DealSearch extends Deal
      */
     public function search($params)
     {
+
+        $user = Yii::$app->user->identity;
+        $userRole = Yii::$app->authManager->getRolesByUser($user->id);
         $query = Deal::find();
 
         $dataProvider = new ActiveDataProvider([
@@ -69,6 +72,10 @@ class DealSearch extends Deal
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
+        if (!isset($userRole['admin']))
+        {
+            $query->andFilterWhere(['user_id' => $user->id ]);
+        }
 
         $query->andFilterWhere(['like', 'model', $this->model])
             ->andFilterWhere(['like', 'description', $this->description])

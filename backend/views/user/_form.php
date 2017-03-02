@@ -16,9 +16,9 @@ use \kartik\file\FileInput;
 
     <?= $form->field($model, 'last_name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'tmp_password')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'status')->dropDownList($model->getStatusList(), [
 
@@ -35,18 +35,6 @@ use \kartik\file\FileInput;
     <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'company')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'short_id')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'tmp_logo')->widget(FileInput::classname(), [
-        'options' => ['accept' => 'image/*'],
-        'pluginOptions' => [
-            'showRemove' => false,
-            'showUpload' => false,
-            // Html::img("backend/uploads/" . $model->profile_pic)
-            'overwriteInitial'=>true
-        ]
-    ]);?>
   
 	<?php if (!Yii::$app->request->isAjax){ ?>
 	  	<div class="form-group">

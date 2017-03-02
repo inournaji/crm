@@ -13,14 +13,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'type')->textInput() ?>
-
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
-
-    <?= $form->field($model, 'rule_name')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'data')->textarea(['rows' => 6]) ?>
-
+    <?= $form->field($model, 'type')->widget(\kartik\switchinput\SwitchInput::className(), [
+        'pluginOptions' => [
+            'onText' => 'Active',
+            'offText' => 'Inactive',
+        ]
+    ])?>
   
 	<?php if (!Yii::$app->request->isAjax){ ?>
 	  	<div class="form-group">

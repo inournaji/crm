@@ -118,4 +118,15 @@ class AuthItem extends \yii\db\ActiveRecord
     {
         return new AuthItemQuery(get_called_class());
     }
+    public function beforeSave($insert)
+    {
+        $rule = AuthRule::findOne(['name'=>$this->name]);
+        if(!$rule) {
+            $rule = new AuthRule();
+            $rule->name = $this->name;
+            $rule->save();
+        }
+        $this->rule_name = $this->name;
+        return Parent::beforeSave($insert);
+    }
 }
