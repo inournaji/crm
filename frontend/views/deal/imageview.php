@@ -1,6 +1,5 @@
 
 <?php
-use yii;
 use yii\bootstrap\Modal;
 use yii\helpers\Html;
 
