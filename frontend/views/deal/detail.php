@@ -42,12 +42,9 @@ use yii\bootstrap\Modal;
                             [
                                 'attribute' => 'attachment_id',
                                 'format' => "raw",
-                                'value' => function($model) {
-                                    if ($model->attachment_id != null){
-                                      return   Yii::$app->view->render('imageview',['id'=>$model->attachment_id]);
-                                        }else
-                                            return "not uploaded yet";
-                                }
+                                'value' => ($model->attachment_id != null) ?
+                                       Yii::$app->view->render('imageview',['id'=>$model->attachment_id])
+                                    : "not uploaded yet",
                             ],
                             'features:ntext',
                             [
