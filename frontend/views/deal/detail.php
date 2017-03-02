@@ -1,6 +1,7 @@
 <?php
 
 use yii\widgets\DetailView;
+use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Deal */
@@ -41,14 +42,12 @@ use yii\widgets\DetailView;
                             [
                                 'attribute' => 'attachment_id',
                                 'format' => "raw",
-                                'value' => ($model->attachment_id != null) ?
-                                    \yii\helpers\Html::a($model->attachment->name,
-                                        \yii\helpers\Url::to(["/deal/download-attachment", "id" => $model->attachment_id],
-                                        [
-                                            'target' => "_blank",
-                                            'data-pjax' => "0"
-                                        ]))
-                                    : "",
+                                'value' => function($model) {
+                                    if ($model->attachment_id != null){
+                                      return   Yii::$app->view->renderPartial('imageview',['id'=>$model->attachment_id]);
+                                        }else
+                                            return "not uploaded yet";
+                                }
                             ],
                             'features:ntext',
                             [
