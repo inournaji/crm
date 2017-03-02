@@ -44,7 +44,7 @@ use yii\bootstrap\Modal;
                                 'format' => "raw",
                                 'value' => function($model) {
                                     if ($model->attachment_id != null){
-                                      return   Yii::$app->view->renderPartial('imageview',['id'=>$model->attachment_id]);
+                                      return   Yii::$app->view->render('imageview',['id'=>$model->attachment_id]);
                                         }else
                                             return "not uploaded yet";
                                 }
