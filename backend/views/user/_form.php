@@ -18,7 +18,9 @@ use \kartik\file\FileInput;
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'tmp_password')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'tmp_password')->passwordInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'password_repeat')->passwordInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'status')->dropDownList($model->getStatusList(), [
 
@@ -34,9 +36,15 @@ use \kartik\file\FileInput;
 
     <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'company')->textInput(['maxlength' => true]) ?>
-  
-	<?php if (!Yii::$app->request->isAjax){ ?>
+    <?= $form->field($model, 'company_id')->dropDownList(\common\helpers\ListHelper::getCompanyList()) ?>
+
+    <?= $form->field($model, 'role')->dropDownList(\common\helpers\ListHelper::getRoleList()) ?>
+
+    <?= $form->field($model, 'contact_content')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'leasingbank_text')->textarea(['rows' => 6]) ?>
+
+    <?php if (!Yii::$app->request->isAjax){ ?>
 	  	<div class="form-group">
 	        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
 	    </div>

@@ -33,7 +33,8 @@
         "kartik-v/yii2-editable": "@dev",
         "bower-asset/sweetalert": "^1.1",
         "yii2mod/yii2-sweet-alert": "*",
-        "kartik-v/yii2-detail-view": "^1.7"
+        "kartik-v/yii2-detail-view": "^1.7",
+        "amass/yii2-bootstrap-panel-widget": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

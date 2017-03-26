@@ -45,15 +45,15 @@ AppAsset::register($this);
             'items' => [
                 ['label' => 'Attachments', 'url' => ['/attachment']],
                 ['label' => 'Customers', 'url' => ['/customer']],
-                ['label' => 'Emails', 'url' => ['/email']],
                 ['label' => 'Users', 'url' => ['/user']],
+                ['label' => 'Cars', 'url' => ['/car']],
+
             ]
         ];
         $menuItems [] = ['label' => 'Settings',
             'items' => [
                 ['label' => 'Roles managment', 'url' => ['/auth-item']],
-                ['label' => 'Rules managment', 'url' => ['/auth-rule']],
-                ['label' => 'User roles', 'url' => ['/auth-assignment']],
+                //['label' => 'User roles', 'url' => ['/auth-assignment']],
                 ['label' => 'Customer types', 'url' => ['/customer-type']],
                 ['label' => 'Car brands', 'url' => ['/viechle-brand']],
             ]

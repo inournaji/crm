@@ -27,4 +27,13 @@ class Constants
     const ACTIVE = 1;
     const IN_ACTIVE_STR = "Inactive";
     const ACTIVE_STR = "Active";
+
+    const CAR_STATUS_PENDING = "1";
+    const CAR_STATUS_APPROVED = "2";
+
+    const CAR_STATUS_PENDING_STR = "Pending";
+    const CAR_STATUS_APPROVED_STR = "Approved";
+
+    const ADMIN = "admin";
+    const SELLER = "seller";
 }

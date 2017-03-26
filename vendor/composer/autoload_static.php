@@ -63,6 +63,10 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         array (
             'cebe\\markdown\\' => 14,
         ),
+        'a' => 
+        array (
+            'amass\\panel\\' => 12,
+        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -78,6 +82,7 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\BrowserKit\\' => 29,
+            'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 49,
         ),
         'P' => 
         array (
@@ -228,6 +233,10 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
         ),
+        'amass\\panel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/amass/yii2-bootstrap-panel-widget',
+        ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
@@ -267,6 +276,10 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         'Symfony\\Component\\BrowserKit\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
+        ),
+        'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stecman/symfony-console-completion/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -678,6 +691,7 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         'PHP_Token_NEW' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NS_C' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NS_SEPARATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PHP_Token_NULLSAFE_OBJECT_OPERATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_NUM_STRING' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_OBJECT_CAST' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_OBJECT_OPERATOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',

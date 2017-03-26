@@ -36,7 +36,15 @@ return [
     ],
     [
         'class' => '\kartik\grid\DataColumn',
-        'attribute' => 'company',
+        'attribute' => 'company_id',
+        'value' => function ($data) {
+            return ($data->company_id == null) ? '' : $data->company->name;
+
+        },
+    ],
+    [
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'role',
     ],
     // [
     // 'class'=>'\kartik\grid\DataColumn',

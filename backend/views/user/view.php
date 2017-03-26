@@ -10,7 +10,6 @@ use yii\widgets\DetailView;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
             'username',
             'auth_key',
             'password_hash',
@@ -26,9 +25,13 @@ use yii\widgets\DetailView;
             'houseno',
             'postal',
             'city',
-            'company',
+            [
+                'attribute' => 'company.id',
+                'value' => ($model->company == null) ? "" : $model->company->name
+            ],
             'short_id',
-            'logo',
+            'contact_content',
+            'leasingbank_text'
         ],
     ]) ?>
 

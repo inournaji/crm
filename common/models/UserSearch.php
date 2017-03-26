@@ -19,7 +19,7 @@ class UserSearch extends User
     {
         return [
             [['id', 'status', 'created_at', 'updated_at'], 'integer'],
-            [['username', 'auth_key', 'password_hash', 'password_reset_token', 'email', 'first_name', 'last_name', 'tel', 'fax', 'houseno', 'postal', 'city', 'company', 'short_id', 'logo'], 'safe'],
+            [['username', 'auth_key', 'password_hash', 'password_reset_token', 'email', 'first_name', 'last_name', 'tel', 'fax', 'houseno', 'postal', 'city', 'company_id', 'company.name', 'short_id'], 'safe'],
         ];
     }
 
@@ -32,6 +32,12 @@ class UserSearch extends User
         return Model::scenarios();
     }
 
+    public function attributes()
+    {
+        // add related fields to searchable attributes
+        return array_merge(parent::attributes(), ['company.name']);
+    }
+
     /**
      * Creates data provider instance with search query applied
      *
@@ -41,7 +47,7 @@ class UserSearch extends User
      */
     public function search($params)
     {
-        $query = User::find();
+        $query = User::find()->joinWith(['company']);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -54,6 +60,13 @@ class UserSearch extends User
             // $query->where('0=1');
             return $dataProvider;
         }
+
+        $dataProvider->sort->attributes = array_merge($dataProvider->sort->attributes, [
+            'company.name' => [
+                'asc' => ['company.name' => SORT_ASC],
+                'desc' => ['company.name' => SORT_DESC]
+            ],
+        ]);
 
         $query->andFilterWhere([
             'id' => $this->id,
@@ -74,9 +87,9 @@ class UserSearch extends User
             ->andFilterWhere(['like', 'houseno', $this->houseno])
             ->andFilterWhere(['like', 'postal', $this->postal])
             ->andFilterWhere(['like', 'city', $this->city])
-            ->andFilterWhere(['like', 'company', $this->company])
-            ->andFilterWhere(['like', 'short_id', $this->short_id])
-            ->andFilterWhere(['like', 'logo', $this->logo]);
+            ->andFilterWhere(['like', 'short_id', $this->short_id]);
+
+        $query->andFilterWhere(['like', 'company.name', $this->getAttribute('company.name')]);
 
         return $dataProvider;
     }

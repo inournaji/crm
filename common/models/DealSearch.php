@@ -42,7 +42,6 @@ class DealSearch extends Deal
      */
     public function search($params)
     {
-
         $user = Yii::$app->user->identity;
         $userRole = Yii::$app->authManager->getRolesByUser($user->id);
         $query = Deal::find();
