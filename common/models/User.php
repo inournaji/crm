@@ -89,6 +89,11 @@ class User extends ActiveRecord implements IdentityInterface
         return $this->hasOne(Company::className(), ['id' => 'company_id']);
     }
 
+    public function getRoles()
+    {
+        return $this->hasMany(AuthAssignment::className(), ['user_id' => 'id']);
+    }
+
     public function setRole($r_name)
     {
         $auth = Yii::$app->authManager;

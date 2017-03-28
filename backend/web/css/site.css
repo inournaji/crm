@@ -122,3 +122,24 @@ a.desc:after {
     background-color: #009EE3;
     color: #ffffff;
 }
+
+.wrap .navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+}
+
+.wrap .navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.wrap .navbar-inverse .btn-link {
+    color: white;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-weight: normal;
+}
+
+
+.file-caption {
+    margin-top: 14px;
+}

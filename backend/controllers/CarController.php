@@ -60,11 +60,12 @@ class CarController extends Controller
         if (Yii::$app->request->post('hasEditable') || Yii::$app->request->isAjax) {
             $car = Car::find()->where(['id' => Yii::$app->request->post('editableKey')])->one();
             $car->load(Yii::$app->request->post("Car")[Yii::$app->request->post('editableIndex')] ,"");
+            $attribute = key(Yii::$app->request->post("Car")[Yii::$app->request->post('editableIndex')]);
             if ($car->save()) {
-                echo json_encode(['output' => ($car->active == Constants::IN_ACTIVE) ? Constants::IN_ACTIVE_STR : Constants::ACTIVE_STR, 'message' => ""]);
+                echo json_encode(['output' => $car->getAttributeValue($attribute), 'message' => ""]);
                 return;
             } else {
-                echo json_encode(['output' => ($car->active == Constants::IN_ACTIVE) ? Constants::IN_ACTIVE_STR : Constants::ACTIVE_STR, 'message' => Html::errorSummary($car)]);
+                echo json_encode(['output' => $car->getAttributeValue($attribute), 'message' => Html::errorSummary($car)]);
                 return;
             }
         }
@@ -118,6 +119,7 @@ class CarController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

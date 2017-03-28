@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use common\helpers\Constants;
+
 /* @var $this yii\web\View */
 /* @var $model common\models\Car */
 
@@ -37,30 +38,34 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             [
                 'attribute' => 'company_id',
-                'value' => ($model->company_id == null) ? "" : $model->company->name
+                'value' => ($model->company_id === null) ? "" : $model->company->name
             ],
             [
                 'attribute' => 'seller_id',
-                'value' => ($model->seller_id == null) ? "" : $model->seller->email
+                'value' => ($model->seller_id === null) ? "" : $model->seller->email
             ],
             'model',
             [
                 'attribute' => 'vehicle_age_id',
-                'value' => ($model->vehicle_age_id == null) ? "" : $model->vehicleAge->name
+                'value' => ($model->vehicle_age_id === null) ? "" : $model->vehicleAge->name
             ],
             'kw',
             'ps',
             [
                 'attribute' => 'transmission_id',
-                'value' => ($model->transmission_id == null) ? "" : $model->transmission->name
+                'value' => ($model->transmission_id === null) ? "" : $model->transmission->name
             ],
             [
                 'attribute' => 'fuel_type_id',
-                'value' => ($model->fuel_type_id == null) ? "" : $model->fuelType->name
+                'value' => ($model->fuel_type_id === null) ? "" : $model->fuelType->name
             ],
             [
                 'attribute' => 'status',
-                'value' => ($model->status == Constants::CAR_STATUS_PENDING) ? Constants::CAR_STATUS_PENDING_STR : Constants::CAR_STATUS_APPROVED_STR
+                'value' => $model->getStatusValue()
+            ],
+            [
+                'attribute' => 'active',
+                'value' => $model->getActiveValue()
             ],
             'highlight1',
             'highlight2',
@@ -87,7 +92,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'available_color1',
             'available_color2',
             'available_color3',
-            'other_colors_available',
+            [
+                'attribute' => 'other_colors_available',
+                'value' => ($model->other_colors_available === null) ? "" : (($model->other_colors_available) ? "Yes" : "No")
+            ],
             'color_interior',
         ],
     ]) ?>
@@ -145,7 +153,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'co2_emmission_komb',
             [
                 'attribute' => 'pollutant_class_id',
-                'value' => ($model->pollutant_class_id == null) ? "" : $model->pollutantClass->name
+                'value' => ($model->pollutant_class_id === null) ? "" : $model->pollutantClass->name
             ],
 
         ],
@@ -178,14 +186,29 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'offer_for_business_customers',
-            'offer_for_private_customers',
-            'is_vehicle_in_stock',
-            'change_to_config_possible',
-            'pickup_ex_works_possible',
+            [
+                'attribute' => 'offer_for_business_customers',
+                'value' => ($model->offer_for_business_customers === null) ? "" : (($model->offer_for_business_customers) ? "Yes" : "No")
+            ],
+            [
+                'attribute' => 'offer_for_private_customers',
+                'value' => ($model->offer_for_private_customers === null) ? "" : (($model->offer_for_private_customers) ? "Yes" : "No")
+            ],
+            [
+                'attribute' => 'is_vehicle_in_stock',
+                'value' => ($model->is_vehicle_in_stock === null) ? "" : (($model->is_vehicle_in_stock) ? "Yes" : "No")
+            ],
+            [
+                'attribute' => 'change_to_config_possible',
+                'value' => ($model->change_to_config_possible === null) ? "" : (($model->change_to_config_possible) ? "Yes" : "No")
+            ],
+            [
+                'attribute' => 'pickup_ex_works_possible',
+                'value' => ($model->pickup_ex_works_possible === null) ? "" : (($model->pickup_ex_works_possible) ? "Yes" : "No")
+            ],
             [
                 'attribute' => 'leasing_type_id',
-                'value' => ($model->leasing_type_id == null) ? "" : $model->leasingType->name
+                'value' => ($model->leasing_type_id === null) ? "" : $model->leasingType->name
             ],
             'price_per_kilometer',
             'short_term',
@@ -248,79 +271,79 @@ $this->params['breadcrumbs'][] = $this->title;
             'same_prices_for_business_private',
             [
                 'attribute' => 'runtime_id1',
-                'value' => ($model->runtime_id1 == null) ? "" : $model->runtimeId1->value
+                'value' => ($model->runtime_id1 === null) ? "" : $model->runtimeId1->value
             ],
             'down_payment1',
             [
                 'attribute' => 'kilometer_id1',
-                'value' => ($model->kilometer_id1 == null) ? "" : $model->kilometerId1->value
+                'value' => ($model->kilometer_id1 === null) ? "" : $model->kilometerId1->value
             ],
             'lease_rate1',
             [
                 'attribute' => 'runtime_id2',
-                'value' => ($model->runtime_id2 == null) ? "" : $model->runtimeId2->value
+                'value' => ($model->runtime_id2 === null) ? "" : $model->runtimeId2->value
             ],
             'down_payment2',
             [
                 'attribute' => 'kilometer_id2',
-                'value' => ($model->kilometer_id2 == null) ? "" : $model->kilometerId2->value
+                'value' => ($model->kilometer_id2 === null) ? "" : $model->kilometerId2->value
             ],
             'lease_rate2',
             [
                 'attribute' => 'runtime_id3',
-                'value' => ($model->runtime_id3 == null) ? "" : $model->runtimeId3->value
+                'value' => ($model->runtime_id3 === null) ? "" : $model->runtimeId3->value
             ],
             'down_payment3',
             [
                 'attribute' => 'kilometer_id3',
-                'value' => ($model->kilometer_id3 == null) ? "" : $model->kilometerId3->value
+                'value' => ($model->kilometer_id3 === null) ? "" : $model->kilometerId3->value
             ],
             'lease_rate3',
             [
                 'attribute' => 'runtime_id4',
-                'value' => ($model->runtime_id4 == null) ? "" : $model->runtimeId4->value
+                'value' => ($model->runtime_id4 === null) ? "" : $model->runtimeId4->value
             ],
             'down_payment4',
             [
                 'attribute' => 'kilometer_id4',
-                'value' => ($model->kilometer_id4 == null) ? "" : $model->kilometerId4->value
+                'value' => ($model->kilometer_id4 === null) ? "" : $model->kilometerId4->value
             ],
             'lease_rate4',
             [
                 'attribute' => 'private_runtime_id1',
-                'value' => ($model->private_runtime_id1 == null) ? "" : $model->privateRuntimeId1->value
+                'value' => ($model->private_runtime_id1 === null) ? "" : $model->privateRuntimeId1->value
             ],
             'private_deposit1',
             [
                 'attribute' => 'private_kilometer_id1',
-                'value' => ($model->private_kilometer_id1 == null) ? "" : $model->privateKilometerId1->value
+                'value' => ($model->private_kilometer_id1 === null) ? "" : $model->privateKilometerId1->value
             ],
             'private_lease_rate1',
             [
                 'attribute' => 'private_runtime_id2',
-                'value' => ($model->private_runtime_id2 == null) ? "" : $model->privateRuntimeId2->value
+                'value' => ($model->private_runtime_id2 === null) ? "" : $model->privateRuntimeId2->value
             ],
             'private_deposit2',
             [
                 'attribute' => 'private_kilometer_id2',
-                'value' => ($model->private_kilometer_id2 == null) ? "" : $model->privateKilometerId2->value
+                'value' => ($model->private_kilometer_id2 === null) ? "" : $model->privateKilometerId2->value
             ],
             'private_lease_rate2',
             [
                 'attribute' => 'private_runtime_id3',
-                'value' => ($model->private_runtime_id3 == null) ? "" : $model->privateRuntimeId3->value
+                'value' => ($model->private_runtime_id3 === null) ? "" : $model->privateRuntimeId3->value
             ],
             'private_advance_payment3',
             'private_kilometer_id3',
             'private_lease_rate3',
             [
                 'attribute' => 'private_runtime_id4',
-                'value' => ($model->private_runtime_id4 == null) ? "" : $model->privateRuntimeId4->value
+                'value' => ($model->private_runtime_id4 === null) ? "" : $model->privateRuntimeId4->value
             ],
             'private_advance_payment4',
             [
                 'attribute' => 'private_kilometer_id4',
-                'value' => ($model->private_kilometer_id4 == null) ? "" : $model->privateKilometerId4->value
+                'value' => ($model->private_kilometer_id4 === null) ? "" : $model->privateKilometerId4->value
             ],
             'private_lease_rate4',
 

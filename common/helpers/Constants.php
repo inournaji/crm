@@ -30,9 +30,12 @@ class Constants
 
     const CAR_STATUS_PENDING = "1";
     const CAR_STATUS_APPROVED = "2";
+    const CAR_STATUS_DECLINED = "3";
 
     const CAR_STATUS_PENDING_STR = "Pending";
     const CAR_STATUS_APPROVED_STR = "Approved";
+    const CAR_STATUS_DECLINED_STR = "Declined";
+
 
     const ADMIN = "admin";
     const SELLER = "seller";

@@ -50,7 +50,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
 
     <?= $form->field($model, 'vehicle_age_id', ['options' => ['class' => $class_4]])->widget(Select2::classname(), [
         'data' => ListHelper::getVehicleAgeList(),
-        'options' => ['placeholder' => 'Select Vehicle Age'],
+        'options' => ['placeholder' => 'Select Vehicle Age', 'onchange' => 'hideNeuwagenFields()'],
         'pluginOptions' => [
             'allowClear' => TRUE,
         ],
@@ -121,7 +121,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture1, [
+                ($model->picture1 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture1, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -135,7 +135,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture2, [
+                ($model->picture2 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture2, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -149,7 +149,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture3, [
+                ($model->picture3 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture3, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -163,7 +163,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture4, [
+                ($model->picture4 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture4, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -200,7 +200,9 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         'headerTitle' => "Additional information for year cars", // Title text can use tag
         'content' => '', // some content in body
         'footer' => false, // show footer or false not showing
-        'type' => true, // get style for panel \amass\panel::TYPE_DEFAULT  default
+        'type' => true, // get style for panel \amass\panel::TYPE_DEFAULT  default,
+        'options' => ['class' => 'panel neu']
+
     ]); ?>
     <?= $form->field($model, 'jw_year', ['options' => ['class' => $class_6]])->textInput(['maxlength' => true]) ?>
 
@@ -450,11 +452,19 @@ $class_8 = "form-group col-lg-8 col-xs-12";
     <?= $form->field($model, 'private_special_text', ['options' => ['class' => 'private-yes']])->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'business_special_text', ['options' => ['class' => 'private-yes']])->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'operation')->hiddenInput(); ?>
     <?php \amass\panel\Panel::end(); ?>
 
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Approve'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?php
+
+        if (!$model->isNewRecord) {
+            echo Html::submitButton(Yii::t('app', 'Decline'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary', 'onclick' => "setOperation()"]);
+        } ?>
+
     </div>
 
     <?php ActiveForm::end(); ?>
@@ -464,7 +474,14 @@ $class_8 = "form-group col-lg-8 col-xs-12";
     $(document).ready(function () {
         ShowHideFields();
         ShowHideFieldsOnChange();
+        hideNeuwagenFields();
     });
+
+    function setOperation() {
+        var dec = "<?php echo \common\helpers\Constants::CAR_STATUS_DECLINED;?>";
+        $("#car-operation").val(dec);
+    }
+
     function ShowHideFieldsOnChange() {
         $('#car-same_prices_for_business_private :radio').change(function () {
             var val = $(this).val();
@@ -551,6 +568,17 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             $(".private-yes").hide();
             $(".field-car-same_prices_for_business_private").hide();
             $(".private-no").show();
+        }
+    }
+
+    function hideNeuwagenFields() {
+
+        var val = $('#car-vehicle_age_id').find(":selected").val();
+        if(val == 1) {
+            $(".neu").hide();
+        }
+        else {
+            $(".neu").show();
         }
     }
 </script>

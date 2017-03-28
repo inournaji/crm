@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\helpers\Constants;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -72,7 +73,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        if(Yii::$app->user->isGuest)
+        if (Yii::$app->user->isGuest)
             return $this->redirect(['login']);
         return $this->redirect(['car/index']);
     }
@@ -89,7 +90,7 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        if ($model->load(Yii::$app->request->post()) && $model->login(null, Constants::ADMIN)) {
             return $this->goBack();
         } else {
             return $this->render('login', [

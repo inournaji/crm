@@ -12,7 +12,7 @@ class m170323_092855_car_info extends Migration
             'id' => $this->primaryKey(),
             'name' => $this->string(45),
             'logo' => $this->string(500)
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->addColumn('user', 'contact_content', $this->text());
         $this->addColumn('user', 'leasingbank_text', $this->text());
@@ -26,37 +26,37 @@ class m170323_092855_car_info extends Migration
         $this->createTable('transmission', [
             'id' => $this->primaryKey(),
             'name' => $this->string(45),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->createTable('vehicle_age', [
             'id' => $this->primaryKey(),
             'name' => $this->string(45),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->createTable('fuel_type', [
             'id' => $this->primaryKey(),
             'name' => $this->string(45),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->createTable('leasing_type', [
             'id' => $this->primaryKey(),
             'name' => $this->string(45),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->createTable('pollutant_class', [
             'id' => $this->primaryKey(),
             'name' => $this->string(10),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->createTable('runtime_config', [
             'id' => $this->primaryKey(),
             'value' => $this->integer(),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->createTable('kilometer_config', [
             'id' => $this->primaryKey(),
             'value' => $this->integer(),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->createTable('car', [
             'id' => $this->primaryKey(),
@@ -162,7 +162,7 @@ class m170323_092855_car_info extends Migration
 
             'created_at' => $this->integer(10),
             'updated_at' => $this->integer(10),
-        ],'ENGINE=InnoDB');
+        ]);
 
         $this->addForeignKey('fk-car-company_id', 'car', 'company_id', 'company', 'id');
         $this->addForeignKey('fk-car-seller_id', 'car', 'seller_id', 'user', 'id');

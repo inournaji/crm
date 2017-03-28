@@ -85,9 +85,9 @@ class CarSearch extends Car
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'company_id' => $this->company_id,
+            'car.company_id' => $this->company_id,
             'seller_id' => $this->seller_id,
-            'status' => $this->status,
+            'car.status' => $this->status,
             'active' => $this->active,
             'vehicle_age_id' => $this->vehicle_age_id,
             'transmission_id' => $this->transmission_id,

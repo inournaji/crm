@@ -22,4 +22,10 @@ class AppAsset extends AssetBundle
         'romdim\bootstrap\material\BootMaterialCssAsset',
         'romdim\bootstrap\material\BootMaterialJsAsset'
     ];
+
+
+    public $jsOptions = array(
+        'position' => \yii\web\View::POS_HEAD
+    );
+
 }

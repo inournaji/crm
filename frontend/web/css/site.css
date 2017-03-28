@@ -8,6 +8,7 @@ body {
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+
 }
 
 .wrap > .container {
@@ -149,7 +150,7 @@ a.desc:after {
 }
 
 .padding {
-    margin: 0px 6px ;
+    margin: 0px 6px;
 }
 
 .header-tr .padding {
@@ -157,5 +158,23 @@ a.desc:after {
     color: #446764;
 }
 
+.wrap .navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+}
+
+.wrap .navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.wrap .navbar-inverse .btn-link {
+    color: white;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-weight: normal;
+}
 
 
+.file-caption {
+    margin-top: 14px;
+}

@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'status',
                 'value' => function ($data) {
-                    return ($data->status == Constants::CAR_STATUS_PENDING) ? Constants::CAR_STATUS_PENDING_STR : Constants::CAR_STATUS_APPROVED_STR;
+                    return $data->getStatusValue();
                 },
                 'filterType'=>GridView::FILTER_SELECT2,
                 'filter'=> \common\helpers\ListHelper::getCarStatus(),
@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => 'kartik\grid\EditableColumn',
                 'attribute' => 'active',
                 'value' => function ($model, $key, $index, $widget) {
-                    return ($model->active == Constants::IN_ACTIVE) ? Constants::IN_ACTIVE_STR : Constants::ACTIVE_STR;
+                    return $model->getActiveValue();
                 },
                 'editableOptions' => [
                     'inputType' => \kartik\editable\Editable::INPUT_WIDGET,

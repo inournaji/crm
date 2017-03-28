@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use common\helpers\Constants;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -75,7 +76,7 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        if ($model->load(Yii::$app->request->post()) && $model->login(Constants::ADMIN, null)) {
             return $this->goBack();
         } else {
             return $this->render('login', [

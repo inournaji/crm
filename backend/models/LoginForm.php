@@ -1,6 +1,7 @@
 <?php
 namespace backend\models;
 
+use common\helpers\Constants;
 use Yii;
 use yii\base\Model;
 
@@ -19,7 +20,7 @@ class LoginForm extends \common\models\LoginForm
     public function validatePassword($attribute, $params)
     {
         if (!$this->hasErrors()) {
-            $user = $this->getUser();
+            $user = $this->getUser(Constants::ADMIN, null);
             if (!$user || !$user->validatePassword($this->password)) {
                 $this->addError($attribute, 'Incorrect username or password.');
             }else {

@@ -42,7 +42,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
 
     <?= $form->field($model, 'vehicle_age_id', ['options' => ['class' => $class_4]])->widget(Select2::classname(), [
         'data' => ListHelper::getVehicleAgeList(),
-        'options' => ['placeholder' => 'Select Vehicle Age'],
+        'options' => ['placeholder' => 'Select Vehicle Age',  'onchange' => 'hideNeuwagenFields()'],
         'pluginOptions' => [
             'allowClear' => TRUE,
         ],
@@ -113,7 +113,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture1, [
+                ($model->picture1 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture1, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -127,7 +127,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture2, [
+                ($model->picture2 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture2, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -141,7 +141,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture3, [
+                ($model->picture3 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture3, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -155,14 +155,13 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             'showRemove' => false,
             'showUpload' => false,
             'initialPreview' => [
-                Html::img(Yii::$app->homeUrl . $model->picture4, [
+                ($model->picture4 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture4, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
             'overwriteInitial' => true
         ]
     ]); ?>
-
     <?php \amass\panel\Panel::end(); ?>
     <?php \amass\panel\Panel::begin([
         //'title' => true, // show header or false not showing
@@ -193,6 +192,8 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         'content' => '', // some content in body
         'footer' => false, // show footer or false not showing
         'type' => true, // get style for panel \amass\panel::TYPE_DEFAULT  default
+        'options' => ['class' => 'panel neu']
+
     ]); ?>
     <?= $form->field($model, 'jw_year', ['options' => ['class' => $class_6]])->textInput(['maxlength' => true]) ?>
 
@@ -456,6 +457,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
     $(document).ready(function () {
         ShowHideFields();
         ShowHideFieldsOnChange();
+        hideNeuwagenFields();
     });
     function ShowHideFieldsOnChange() {
         $('#car-same_prices_for_business_private :radio').change(function () {
@@ -543,6 +545,16 @@ $class_8 = "form-group col-lg-8 col-xs-12";
             $(".private-yes").hide();
             $(".field-car-same_prices_for_business_private").hide();
             $(".private-no").show();
+        }
+    }
+
+    function hideNeuwagenFields() {
+        var val = $('#car-vehicle_age_id').find(":selected").val();
+        if(val == 1) {
+            $(".neu").hide();
+        }
+        else {
+            $(".neu").show();
         }
     }
 </script>

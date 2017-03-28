@@ -544,4 +544,35 @@ class Car extends \yii\db\ActiveRecord
             }
         parent::afterSave($insert, $changedAttributes);
     }
+
+    public function getAttributeValue($attribute) {
+        if($attribute == "active")
+            return $this->getActiveValue();
+        elseif($attribute == "status")
+            return $this->getStatusValue();
+
+        return $this->$attribute;
+    }
+
+    public function getStatusValue() {
+        switch($this->status) {
+            case Constants::CAR_STATUS_APPROVED:
+                return Constants::CAR_STATUS_APPROVED_STR;
+            case Constants::CAR_STATUS_PENDING:
+                return Constants::CAR_STATUS_PENDING_STR;
+            case Constants::CAR_STATUS_DECLINED:
+                return Constants::CAR_STATUS_DECLINED_STR;
+        }
+    }
+
+    public function getActiveValue() {
+        switch($this->active) {
+            case Constants::ACTIVE:
+                return Constants::ACTIVE_STR;
+            case Constants::IN_ACTIVE:
+                return Constants::IN_ACTIVE_STR;
+        }
+
+        return "";
+    }
 }

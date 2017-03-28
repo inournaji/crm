@@ -16,6 +16,8 @@ use \kartik\file\FileInput;
 
     <?= $form->field($model, 'last_name')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'short_id')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'tmp_password')->passwordInput(['maxlength' => true]) ?>

@@ -1,6 +1,7 @@
 <?php
 namespace common\models;
 
+use common\helpers\Constants;
 use Yii;
 use yii\base\Model;
 
@@ -41,7 +42,7 @@ class LoginForm extends Model
     public function validatePassword($attribute, $params)
     {
         if (!$this->hasErrors()) {
-            $user = $this->getUser();
+            $user = $this->getUser(null, Constants::ADMIN);
             if (!$user || !$user->validatePassword($this->password)) {
                 $this->addError($attribute, 'Incorrect username or password.');
             }
@@ -53,10 +54,10 @@ class LoginForm extends Model
      *
      * @return bool whether the user is logged in successfully
      */
-    public function login()
+    public function login($role, $exculded_role)
     {
         if ($this->validate()) {
-            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+            return Yii::$app->user->login($this->getUser($role, $exculded_role), $this->rememberMe ? 3600 * 24 * 30 : 0);
         } else {
             return false;
         }
@@ -67,10 +68,18 @@ class LoginForm extends Model
      *
      * @return User|null
      */
-    protected function getUser()
+    protected function getUser($role, $exculded_role)
     {
         if ($this->_user === null) {
             $this->_user = User::findByEmail($this->email);
+            if ($role != null) {
+                if ($role != $this->_user->role)
+                    return null;
+            } else {
+                if ($exculded_role != null)
+                    if ($exculded_role == $this->_user->role)
+                        return null;
+            }
         }
 
         return $this->_user;

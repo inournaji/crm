@@ -59,7 +59,10 @@ class ListHelper
 
     public static function getSellerList()
     {
-        return ArrayHelper::map(User::find()->all(), 'id', 'email');
+        $sellers = User::find()->joinWith(['roles' => function ($query) {
+            $query->where(['item_name' => Constants::SELLER]);
+        }])->all();
+        return ArrayHelper::map($sellers, 'id', 'email');
     }
 
     public static function getPollutantClassList()
@@ -88,6 +91,7 @@ class ListHelper
         return [
             Constants::CAR_STATUS_PENDING => Constants::CAR_STATUS_PENDING_STR,
             Constants::CAR_STATUS_APPROVED => Constants::CAR_STATUS_APPROVED_STR,
+            Constants::CAR_STATUS_DECLINED => Constants::CAR_STATUS_DECLINED_STR
         ];
     }
 
