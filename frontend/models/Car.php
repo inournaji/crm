@@ -30,7 +30,7 @@ class Car extends \common\models\Car
     {
         if ($insert)
         {
-            MailHelper::sendEmail($this, Yii::$app->params["adminEmail"], Yii::$app->params["supportEmail"], "CRM", "A new Car is added", "car_added");
+             MailHelper::sendEmail($this, Yii::$app->params["adminEmail"], Yii::$app->params["supportEmail"], "CRM", "A new Car is added", "car_added");
         }
 
         parent::afterSave($insert, $changedAttributes);

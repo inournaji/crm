@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/params.php" afterPath="$PROJECT_DIR$/common/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/config/params.php" afterPath="$PROJECT_DIR$/backend/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/config/params.php" afterPath="$PROJECT_DIR$/console/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/params.php" afterPath="$PROJECT_DIR$/frontend/config/params.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/Car.php" afterPath="$PROJECT_DIR$/frontend/models/Car.php" />
     </list>
     <ignored path="crm.iws" />
@@ -30,18 +32,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1490277337252" expanded="true" signature="172:317" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-local.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -67,66 +57,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Car.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Car.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/models/Car.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="32" column="105" selection-start-line="32" selection-start-column="105" selection-end-line="32" selection-end-column="105" />
+            <state relative-caret-position="323">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m170210_215438_add_token_validity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m170210_215438_add_token_validity.php">
+      <file leaf-file-name="params.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/params.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m170210_103752_db_fix.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m170210_103752_db_fix.php">
+      <file leaf-file-name="params.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/config/params.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m170324_171748_add_status_to_car.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m170324_171748_add_status_to_car.php">
+      <file leaf-file-name="params.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/console/config/params.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="84">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m170325_082206_fix_data.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/migrations/m170325_082206_fix_data.php">
+      <file leaf-file-name="MailHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/helpers/MailHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1806">
-              <caret line="86" column="1" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
-              <folding>
-                <marker date="1490444951528" expanded="true" signature="145:203" ph="DELETE FROM " />
-                <marker date="1490444951528" expanded="true" signature="213:274" ph="DELETE FROM " />
-                <marker date="1490444951528" expanded="true" signature="284:343" ph="DELETE FROM " />
-                <marker date="1490444951528" expanded="true" signature="353:410" ph="DELETE FROM " />
-                <marker date="1490444951528" expanded="true" signature="421:460" ph="UPDATE `auth... " />
-                <marker date="1490444951528" expanded="true" signature="471:522" ph="INSERT INTO `company`... " />
-                <marker date="1490444951528" expanded="true" signature="533:644" ph="INSERT INTO `transmission`... " />
-                <marker date="1490444951528" expanded="true" signature="655:741" ph="INSERT INTO `vehicle_age`... " />
-                <marker date="1490444951528" expanded="true" signature="752:951" ph="INSERT INTO `fuel_type`... " />
-                <marker date="1490444951528" expanded="true" signature="962:1061" ph="INSERT INTO `leasing_type`... " />
-                <marker date="1490444951528" expanded="true" signature="1072:1236" ph="INSERT INTO `pollutant_class`... " />
-                <marker date="1490444951528" expanded="true" signature="1247:1370" ph="INSERT INTO `runtime_config`... " />
-                <marker date="1490444951528" expanded="true" signature="1381:1526" ph="INSERT INTO `kilometer_config`... " />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,19 +117,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main-local.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="web" target-branch="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/views/Attachment/_columns.php" />
-        <option value="$PROJECT_DIR$/backend/views/viechle-brand/_form.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/backend/views/attachment/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/attachment/_form.php" />
@@ -167,7 +151,6 @@
         <option value="$PROJECT_DIR$/backend/views/auth-assignment/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/customer-type/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/user/_columns.php" />
-        <option value="$PROJECT_DIR$/backend/config/params.php" />
         <option value="$PROJECT_DIR$/backend/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/frontend/assets/AppAsset.php" />
         <option value="$PROJECT_DIR$/backend/web/.htaccess" />
@@ -200,8 +183,11 @@
         <option value="$PROJECT_DIR$/common/models/Customer.php" />
         <option value="$PROJECT_DIR$/api/modules/v1/controllers/DealController.php" />
         <option value="$PROJECT_DIR$/console/migrations/m170323_092855_car_info.php" />
-        <option value="$PROJECT_DIR$/common/config/main-local.php" />
         <option value="$PROJECT_DIR$/common/config/params.php" />
+        <option value="$PROJECT_DIR$/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/backend/config/params.php" />
+        <option value="$PROJECT_DIR$/frontend/config/params.php" />
+        <option value="$PROJECT_DIR$/console/config/params.php" />
         <option value="$PROJECT_DIR$/frontend/models/Car.php" />
       </list>
     </option>
@@ -313,7 +299,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="main.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;user&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/User.php&#10;create&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m170125_102855_create_car.php&#10;main&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;mai&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;main.p&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;compo&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;mi&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m130524_201442_init.php&#10;composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/config/main-local.php&#10;main.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;user&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/User.php&#10;create&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m170125_102855_create_car.php&#10;mai&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;main.p&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;compo&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;mi&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m130524_201442_init.php&#10;composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -421,7 +407,7 @@
       <workItem from="1490552412587" duration="1280000" />
       <workItem from="1490553766508" duration="1936000" />
       <workItem from="1490637425751" duration="5819000" />
-      <workItem from="1490728452875" duration="1466000" />
+      <workItem from="1490728452875" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1484907563744</created>
@@ -661,11 +647,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490728567495</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="mail config">
+      <created>1490737224957</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1490737224957</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128800000" />
+    <option name="totallyTimeSpent" value="129786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1289" height="784" extended-state="6" />
@@ -675,20 +668,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20029673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20029673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31602374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33531156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980362" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33679524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -730,7 +723,8 @@
     <MESSAGE value="create car logic" />
     <MESSAGE value="fix migration" />
     <MESSAGE value="28-3-fixes by amaney" />
-    <option name="LAST_COMMIT_MESSAGE" value="28-3-fixes by amaney" />
+    <MESSAGE value="mail config" />
+    <option name="LAST_COMMIT_MESSAGE" value="mail config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -750,41 +744,22 @@
           <line>118</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/frontend/models/Car.php</url>
+          <line>32</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/frontend/models/Car.php</url>
+          <line>35</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/base/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="336" column="20" selection-start-line="336" selection-start-column="20" selection-end-line="336" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/validators/InlineValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/DealSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/assets/AppAsset.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -979,6 +954,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,6 +983,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,6 +991,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,9 +1090,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1490277337252" expanded="true" signature="172:317" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,14 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/models/Car.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="32" column="105" selection-start-line="32" selection-start-column="105" selection-end-line="32" selection-end-column="105" />
           <folding />
         </state>
       </provider>
@@ -1142,10 +1110,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/helpers/MailHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/config/main-local.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Car.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding />
         </state>
       </provider>
