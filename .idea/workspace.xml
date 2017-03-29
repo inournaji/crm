@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/params.php" afterPath="$PROJECT_DIR$/common/config/params.php" />
     </list>
     <ignored path="crm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="params.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/config/params.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+            <state relative-caret-position="63">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -357,7 +356,7 @@
       <workItem from="1490553766508" duration="1936000" />
       <workItem from="1490637425751" duration="5819000" />
       <workItem from="1490728452875" duration="3324000" />
-      <workItem from="1490810939578" duration="394000" />
+      <workItem from="1490810939578" duration="1025000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1484907563744</created>
@@ -618,11 +617,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490811236390</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add kamil as admin mail">
+      <created>1490811348250</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1490811348250</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131052000" />
+    <option name="totallyTimeSpent" value="131683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1289" height="784" extended-state="6" />
@@ -688,7 +694,8 @@
     <MESSAGE value="28-3-fixes by amaney" />
     <MESSAGE value="mail config" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="add kamil as admin mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="add kamil as admin mail" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1083,8 +1090,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/config/params.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        <state relative-caret-position="63">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
