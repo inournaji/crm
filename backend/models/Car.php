@@ -31,7 +31,7 @@ class Car extends \common\models\Car
             $seller = User::find()->where(['id' => $this->seller_id])->one();
             $this->company_id = $seller->company_id;
         }
-        if ($this->status == $this->oldAttributes["status"])
+        if ($this->status == $this->getOldAttribute("status"))
             $this->status = Constants::CAR_STATUS_APPROVED;
 
         if ($this->operation == Constants::CAR_STATUS_DECLINED)
