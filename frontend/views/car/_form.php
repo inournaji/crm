@@ -112,8 +112,8 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         'pluginOptions' => [
             'showRemove' => false,
             'showUpload' => false,
-            'initialPreview' => [
-                ($model->picture1 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture1, [
+            'initialPreview' => ($model->picture1 == null) ? "" : [
+                Html::img(Yii::$app->homeUrl . $model->picture1, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -126,8 +126,9 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         'pluginOptions' => [
             'showRemove' => false,
             'showUpload' => false,
-            'initialPreview' => [
-                ($model->picture2 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture2, [
+
+            'initialPreview' => ($model->picture2 == null) ? "" : [
+                Html::img(Yii::$app->homeUrl . $model->picture2, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -140,8 +141,8 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         'pluginOptions' => [
             'showRemove' => false,
             'showUpload' => false,
-            'initialPreview' => [
-                ($model->picture3 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture3, [
+            'initialPreview' => ($model->picture3 == null) ? "" : [
+                Html::img(Yii::$app->homeUrl . $model->picture3, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
@@ -154,14 +155,15 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         'pluginOptions' => [
             'showRemove' => false,
             'showUpload' => false,
-            'initialPreview' => [
-                ($model->picture4 == null) ? "" : Html::img(Yii::$app->homeUrl . $model->picture4, [
+            'initialPreview' => ($model->picture4 == null) ? "" : [
+                Html::img(Yii::$app->homeUrl . $model->picture4, [
                     'width' => '100px',
                     'height' => '100px',])
             ],
             'overwriteInitial' => true
         ]
     ]); ?>
+
     <?php \amass\panel\Panel::end(); ?>
     <?php \amass\panel\Panel::begin([
         //'title' => true, // show header or false not showing
