@@ -58,7 +58,6 @@ $class_8 = "form-group col-lg-8 col-xs-12";
 
     <?= $form->field($model, 'kw', ['options' => ['class' => $class_4]])->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'ps', ['options' => ['class' => $class_4]])->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'transmission_id', ['options' => ['class' => $class_4]])->widget(Select2::classname(), [
         'data' => ListHelper::getTransmissionList(),

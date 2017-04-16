@@ -53,38 +53,6 @@ class Car extends \common\models\Car
             //Send API Request
         }
         $url = "http://dev.leasingdeal.de/wp-json/crm/v1/car";
-       /* $data = [
-            'verkufer' => 'verkufer',
-            'aktiv' => 'aktiv',
-            'marke_modell' => 'marke_modell',
-            'ausstattungslinie' => 'ausstattungslinie',
-            'erstzulassung' => 'erstzulassung',
-            'leistung' => 'leistung',
-            'kraftstoffart' => 'kraftstoffart',
-            'getriebe' => 'getriebe',
-            'farbe' => 'farbe',
-            'verbrauch_short' => 'verbrauch_short',
-            'verbrauch_short' => 'verbrauch_short',
-            'fahrzeugalter' => 'fahrzeugalter',
-            'kundengruppe' => 'kundengruppe',
-            'leasingtyp' => 'leasingtyp',
-            'listenpreis' => 'listenpreis',
-            'verfuegbarkeit' => 'verfuegbarkeit',
-            'lieferzeit_in_wochen' => 'lieferzeit_in_wochen',
-            'ueberfhrungskosten_ab_werk' => 'ueberfhrungskosten_ab_werk',
-            'ueberfhrungskosten_ab_autohaus' => 'ueberfhrungskosten_ab_autohaus',
-            'wartung_verschleiss' => 'wartung_verschleiss',
-            'monatliche_leasingrate_1' => 'monatliche_leasingrate_1',
-            'mwst_1' => 'mwst_1',
-            'laufleistung_1' => 'laufleistung_1',
-            'laufzeit_1' => 'laufzeit_1',
-            'anzahlung_1' => 'anzahlung_1'
-        ];*/
-       //             $data['erstzulassung'] = $request->get_param('erstzulassung'); // first reg date it should be date instead of time stamp
-        //$data['leistung'] = $request->get_param('Ausstattungslinie');
-        //             //$data['verbrauch_short'] = $request->get_param('verbrauch_short');
-        //$data['Listenpreis'] = $request->get_param('Listenpreis'); // we should deal with this as currency
-        //            $data['ueberfhrungskosten_ab_autohaus'] = $request->get_param('ueberfhrungskosten_ab_autohaus'); // we should deal with this as currency
 
         $fuel_type = FuelType::findOne(['id' => $this->fuel_type_id]);
         $transmission = Transmission::findOne(['id' => $this->transmission_id]);
@@ -93,24 +61,39 @@ class Car extends \common\models\Car
         $leasing_type = LeasingType::findOne(['id'=> $this->leasing_type_id]);
         $run_time = RuntimeConfig::findOne(['id'=>$this->runtime_id1]);
         $kilo_meter = KilometerConfig::findOne(['id'=>$this->kilometer_id1]);
-     //   $seller = User::findOne(['id'=> $this->getSeller()]);
+        $seller = User::findOne(['id'=>1]);
+        $title = $seller->first_name.' | '.$this->model.' ';
+        if(! empty($this->equipment_line))
+            $title .= ' | '.$this->equipment_line;
+        if(! empty($this->motorization))
+            $title .= ' | '.$this->motorization;
+        $colors = [
+            'farbe1' => $this->available_color1,
+            'farbe2' => $this->available_color2,
+            'farbe3' => $this->available_color3,
+        ];
+        $imagesDir =  Yii::$app->params["uploadUrl"];
 
         $data =[
-            'title' => 'Car id: '.$this->id,
-            'verkufer' => 'MK',
+            'title' => $title,
+            'verkufer' => $seller->first_name,
+            'bild1'=> $this->picture1 != null ? $imagesDir.$this->picture1 : null,
+            'bild2'=> $this->picture2 != null ? $imagesDir.$this->picture1 : null,
+            'bild3'=> $this->picture3 != null ? $imagesDir.$this->picture1 : null,
+            'bild4'=> $this->picture4 != null ? $imagesDir.$this->picture1 : null,
             'marke_modell' => $this->model,
-            'Ausstattungslinie' => $this->equipment_line,
-            'Kraftstoffart' => $fuel_type->name,
+            'ausstattungslinie' => $this->equipment_line,
+            'kraftstoffart' => $fuel_type->name,
             'getriebe'=> $transmission->name,
-            'farbe' => $this->available_color1,
-            'co2_klasse' => $pollutant_class->name,
-            'fahrzeugalter' => $vehicle_age->name,
-            'leasingtyp' => $leasing_type->name,
+            'farbe' => $colors,
+            'co2_klasse' => !is_null($pollutant_class) ?$pollutant_class->name :null,
+            'fahrzeugalter' =>  !is_null($vehicle_age) ?$vehicle_age->name :null,
+            'leasingtyp' => !is_null($leasing_type)? $leasing_type->name : null,
             'verfuegbarkeit' => $this->is_vehicle_in_stock,
             'wartung_verschleiss' => $this->maintenance_and_wear,
             'monatliche_leasingrate_1' => $this->lease_rate1,
-            'laufleistung_1' => $kilo_meter->value,
-            'laufzeit_1' => $run_time->value,
+            'laufleistung_1' => !is_null($kilo_meter)? $kilo_meter->value: null,
+            'laufzeit_1' => !is_null($run_time)? $run_time->value: null,
             'anzahlung_1' => 0
 
         ];

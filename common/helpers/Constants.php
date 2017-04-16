@@ -39,4 +39,7 @@ class Constants
 
     const ADMIN = "admin";
     const SELLER = "seller";
+
+    const PS_CONVERSION_RATE = 1.36;
+    const IMAGES_PATH = 'http://crm.webersapps.com/';
 }

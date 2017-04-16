@@ -99,12 +99,13 @@ class User extends ActiveRecord implements IdentityInterface
         $auth = Yii::$app->authManager;
         $role = $auth->getRole($r_name);
         $roles = Yii::$app->authManager->getRolesByUser($this->id);
-        if (!isset($roles[$r_name])) {
-            $auth->assign($role, $this->id);
-        }
-        else{
-            $auth->revokeAll($this->id);
-            $auth->assign($role, $this->id);
+        if(!is_null($role)) {
+            if (!isset($roles[$r_name])) {
+                $auth->assign($role, $this->id);
+            } else {
+                $auth->revokeAll($this->id);
+                $auth->assign($role, $this->id);
+            }
         }
         return;
     }
