@@ -61,8 +61,8 @@ class Car extends \common\models\Car
         $leasing_type = LeasingType::findOne(['id'=> $this->leasing_type_id]);
         $run_time = RuntimeConfig::findOne(['id'=>$this->runtime_id1]);
         $kilo_meter = KilometerConfig::findOne(['id'=>$this->kilometer_id1]);
-        $seller = User::findOne(['id'=>1]);
-        $title = $seller->first_name.' | '.$this->model.' ';
+        $seller = User::findOne(['id'=>$this->seller_id]);
+        $title = $seller->first_name.' '.$this->model.' ';
         if(! empty($this->equipment_line))
             $title .= ' | '.$this->equipment_line;
         if(! empty($this->motorization))
@@ -76,6 +76,8 @@ class Car extends \common\models\Car
 
         $data =[
             'title' => $title,
+            'content' => $this->description,
+            'leistung'=> $this->kw .' kW / '.$this->ps.' PS',
             'verkufer' => $seller->first_name,
             'bild1'=> $this->picture1 != null ? $imagesDir.$this->picture1 : null,
             'bild2'=> $this->picture2 != null ? $imagesDir.$this->picture1 : null,
@@ -94,7 +96,7 @@ class Car extends \common\models\Car
             'monatliche_leasingrate_1' => $this->lease_rate1,
             'laufleistung_1' => !is_null($kilo_meter)? $kilo_meter->value: null,
             'laufzeit_1' => !is_null($run_time)? $run_time->value: null,
-            'anzahlung_1' => 0
+            'anzahlung_1' => $this->down_payment1,
 
         ];
 
