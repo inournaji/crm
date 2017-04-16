@@ -18,6 +18,7 @@ use common\models\VehicleAge;
 use common\models\LeasingType;
 use common\models\RuntimeConfig;
 use common\models\KilometerConfig;
+use common\models\Company;
 use Yii;
 
 class Car extends \common\models\Car
@@ -62,7 +63,11 @@ class Car extends \common\models\Car
         $run_time = RuntimeConfig::findOne(['id'=>$this->runtime_id1]);
         $kilo_meter = KilometerConfig::findOne(['id'=>$this->kilometer_id1]);
         $seller = User::findOne(['id'=>$this->seller_id]);
-        $title = $seller->first_name.' '.$this->model.' ';
+        $company = Company::findOne(['id' => $seller->company_id]);
+       $title = '';
+        if(! is_null($company))
+          $title .= $company->name.' '.
+        $title .= $this->model.' ';
         if(! empty($this->equipment_line))
             $title .= ' | '.$this->equipment_line;
         if(! empty($this->motorization))
@@ -77,6 +82,8 @@ class Car extends \common\models\Car
         $data =[
             'title' => $title,
             'content' => $this->description,
+            'offer_for_business_customers' => $this->offer_for_business_customers,
+            'offer_for_private_customers' => $this->offer_for_private_customers,
             'leistung'=> $this->kw .' kW / '.$this->ps.' PS',
             'verkufer' => $seller->first_name,
             'bild1'=> $this->picture1 != null ? $imagesDir.$this->picture1 : null,
