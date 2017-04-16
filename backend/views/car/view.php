@@ -113,22 +113,22 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             [
                 'attribute' => 'picture1',
-                'value' =>($model->picture1 == null) ? "" :  Yii::$app->homeUrl . $model->picture1,
+                'value' =>($model->picture1 == null) ? "" :  '/frontend/web/' . $model->picture1,
                 'format' => ($model->picture1 == null) ? "raw" : ['image', ['width' => '100', 'height' => '100']],
             ],
             [
                 'attribute' => 'picture2',
-                'value' => ($model->picture2 == null) ? "" :Yii::$app->homeUrl . $model->picture2,
+                'value' => ($model->picture2 == null) ? "" :'/frontend/web/' . $model->picture2,
                 'format' => ($model->picture2 == null) ? "raw" :['image', ['width' => '100', 'height' => '100']],
             ],
             [
                 'attribute' => 'picture3',
-                'value' => ($model->picture3 == null) ? "" :Yii::$app->homeUrl . $model->picture3,
+                'value' => ($model->picture3 == null) ? "" :'/frontend/web/' . $model->picture3,
                 'format' => ($model->picture3 == null) ? "raw" :['image', ['width' => '100', 'height' => '100']],
             ],
             [
                 'attribute' => 'picture4',
-                'value' => ($model->picture4 == null) ? "" :Yii::$app->homeUrl . $model->picture4,
+                'value' => ($model->picture4 == null) ? "" :'/frontend/web/' . $model->picture4,
                 'format' => ($model->picture4 == null) ? "raw" :['image', ['width' => '100', 'height' => '100']],
             ],
         ],

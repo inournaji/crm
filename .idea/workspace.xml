@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="fix image url">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+    <list default="true" id="f59412ef-b629-44a6-ab95-c21c117926b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/Car.php" afterPath="$PROJECT_DIR$/backend/models/Car.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/params.php" afterPath="$PROJECT_DIR$/common/config/params.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/CarSearch.php" afterPath="$PROJECT_DIR$/common/models/CarSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/car/view.php" afterPath="$PROJECT_DIR$/backend/views/car/view.php" />
     </list>
     <ignored path="crm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,20 +28,40 @@
         <entry file="file://$PROJECT_DIR$/common/models/Car.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="123">
-              <caret line="262" column="26" lean-forward="false" selection-start-line="262" selection-start-column="13" selection-end-line="262" selection-end-column="26" />
+              <caret line="239" column="41" lean-forward="false" selection-start-line="239" selection-start-column="13" selection-end-line="239" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Car.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Car.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/models/Car.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="168">
+              <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="35" />
               <folding>
                 <element signature="e#123#170#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/views/car/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="130" column="76" lean-forward="false" selection-start-line="130" selection-start-column="76" selection-end-line="130" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Company.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/Company.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,42 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/helpers/Constants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/models/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="params.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/config/params.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stock</find>
-      <find>maintenance_and_wear</find>
       <find>runtime_id1</find>
       <find>Kilometer 1</find>
       <find>private_kilometer_id1</find>
@@ -160,9 +145,11 @@
       <find>adminEmail</find>
       <find>age</find>
       <find>Effective interest rate</find>
-      <find>desc</find>
       <find>verfuegbarkeit</find>
+      <find>company_</find>
       <find>anzahlung</find>
+      <find>Angebot für Gewerbekunden</find>
+      <find>desc</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\crm\frontend</dir>
@@ -179,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/views/attachment/view.php" />
         <option value="$PROJECT_DIR$/backend/views/viechle-brand/_columns.php" />
         <option value="$PROJECT_DIR$/backend/views/auth-rule/_columns.php" />
         <option value="$PROJECT_DIR$/console/migrations/m170128_163647_extend_user.php" />
@@ -230,6 +216,7 @@
         <option value="$PROJECT_DIR$/common/config/params.php" />
         <option value="$PROJECT_DIR$/common/models/CarSearch.php" />
         <option value="$PROJECT_DIR$/backend/models/Car.php" />
+        <option value="$PROJECT_DIR$/backend/views/car/view.php" />
       </list>
     </option>
   </component>
@@ -291,7 +278,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,11 +292,33 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="car" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,7 +332,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="car.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/Car.php&#10;params&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/config/params.php&#10;Car&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/Car.php&#10;Car.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/Car.php&#10;User&#9;null&#9;null&#10;main&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/config/main-local.php&#10;main.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;user&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/User.php&#10;create&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m170125_102855_create_car.php&#10;mai&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;main.p&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;compo&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;mi&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m130524_201442_init.php&#10;composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
+    <property name="SearchEverywhereHistoryKey" value="Car&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/Car.php&#10;User&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/User.php&#10;car.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/Car.php&#10;params&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/config/params.php&#10;Car.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/Car.php&#10;main&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/config/main-local.php&#10;main.php&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;user&#9;FILE&#9;file://D:/xampp/htdocs/crm/common/models/User.php&#10;create&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m170125_102855_create_car.php&#10;mai&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;main.p&#9;FILE&#9;file://D:/xampp/htdocs/crm/backend/views/layouts/main.php&#10;compo&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;mi&#9;FILE&#9;file://D:/xampp/htdocs/crm/console/migrations/m130524_201442_init.php&#10;composer&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;comp&#9;FILE&#9;file://D:/xampp/htdocs/crm/composer.json&#10;AppAss&#9;FILE&#9;file://D:/xampp/htdocs/crm/frontend/assets/AppAsset.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -470,7 +479,7 @@
       <workItem from="1491940234742" duration="1989000" />
       <workItem from="1491995933543" duration="588000" />
       <workItem from="1492114398668" duration="14135000" />
-      <workItem from="1492333548343" duration="15564000" />
+      <workItem from="1492333548343" duration="17055000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1484907563744</created>
@@ -731,11 +740,25 @@
       <option name="project" value="LOCAL" />
       <updated>1492358478457</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fixes">
+      <created>1492368183894</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1492368183894</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fixes">
+      <created>1492369101207</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1492369101207</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167145000" />
+    <option name="totallyTimeSpent" value="168636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1289" height="784" extended-state="6" />
@@ -796,7 +819,6 @@
     <MESSAGE value="edit" />
     <MESSAGE value="last version 14/2" />
     <MESSAGE value="render image in modal" />
-    <MESSAGE value="fixes" />
     <MESSAGE value="allow admin login for backend" />
     <MESSAGE value="create car logic" />
     <MESSAGE value="fix migration" />
@@ -804,7 +826,8 @@
     <MESSAGE value="mail config" />
     <MESSAGE value="WP integration" />
     <MESSAGE value="WP integration and some fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="WP integration and some fixes" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -826,28 +849,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/models/Car.php</url>
-          <line>119</line>
+          <line>126</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/models/Car.php</url>
-          <line>63</line>
+          <line>64</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/models/Car.php</url>
-          <line>64</line>
+          <line>69</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/models/Car.php</url>
-          <line>120</line>
+          <line>127</line>
           <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/backend/models/Car.php</url>
-          <line>102</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="32" />
@@ -860,20 +878,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/views/customer/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/user/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/customer/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1089,6 +1093,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,14 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/models/Car.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1184,30 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/helpers/Constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/config/params.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -1228,21 +1201,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="79" column="98" lean-forward="false" selection-start-line="79" selection-start-column="88" selection-end-line="79" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/helpers/Constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/Company.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/models/Car.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
-          <caret line="262" column="26" lean-forward="false" selection-start-line="262" selection-start-column="13" selection-end-line="262" selection-end-column="26" />
+          <caret line="239" column="41" lean-forward="false" selection-start-line="239" selection-start-column="13" selection-end-line="239" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/models/Car.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="168">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="35" />
           <folding>
             <element signature="e#123#170#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/car/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="130" column="76" lean-forward="false" selection-start-line="130" selection-start-column="76" selection-end-line="130" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
