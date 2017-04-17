@@ -53,80 +53,88 @@ class Car extends \common\models\Car
         if ($insert) {
             //Send API Request
         }
-        $url = "http://dev.leasingdeal.de/wp-json/crm/v1/car";
+        if(! $this->wp_sent) {
+            $url = "http://dev.leasingdeal.de/wp-json/crm/v1/car";
+            $fuel_type = FuelType::findOne(['id' => $this->fuel_type_id]);
+            $transmission = Transmission::findOne(['id' => $this->transmission_id]);
+            $pollutant_class = PollutantClass::findOne(['id' => $this->pollutant_class_id]);
+            $vehicle_age = VehicleAge::findOne(['id' => $this->vehicle_age_id]);
+            $leasing_type = LeasingType::findOne(['id' => $this->leasing_type_id]);
+            $run_time = RuntimeConfig::findOne(['id' => $this->runtime_id1]);
+            $kilo_meter = KilometerConfig::findOne(['id' => $this->kilometer_id1]);
+            $seller = User::findOne(['id' => $this->seller_id]);
+            $company = Company::findOne(['id' => $seller->company_id]);
+            $title = '';
+            if (!is_null($company))
+                $title .= $company->name . ' ';
+            $title .= $this->model . ' ';
+            if (!empty($this->equipment_line))
+                $title .= ' | ' . $this->equipment_line;
+            if (!empty($this->motorization))
+                $title .= ' | ' . $this->motorization;
+            $colors = [
+                'farbe1' => $this->available_color1,
+                'farbe2' => $this->available_color2,
+                'farbe3' => $this->available_color3,
+            ];
+            $imagesDir = Yii::$app->params["uploadUrl"];
 
-        $fuel_type = FuelType::findOne(['id' => $this->fuel_type_id]);
-        $transmission = Transmission::findOne(['id' => $this->transmission_id]);
-        $pollutant_class = PollutantClass::findOne(['id'=> $this->pollutant_class_id]);
-        $vehicle_age = VehicleAge::findOne(['id'=> $this->vehicle_age_id]);
-        $leasing_type = LeasingType::findOne(['id'=> $this->leasing_type_id]);
-        $run_time = RuntimeConfig::findOne(['id'=>$this->runtime_id1]);
-        $kilo_meter = KilometerConfig::findOne(['id'=>$this->kilometer_id1]);
-        $seller = User::findOne(['id'=>$this->seller_id]);
-        $company = Company::findOne(['id' => $seller->company_id]);
-       $title = '';
-        if(! is_null($company))
-          $title .= $company->name.' '.
-        $title .= $this->model.' ';
-        if(! empty($this->equipment_line))
-            $title .= ' | '.$this->equipment_line;
-        if(! empty($this->motorization))
-            $title .= ' | '.$this->motorization;
-        $colors = [
-            'farbe1' => $this->available_color1,
-            'farbe2' => $this->available_color2,
-            'farbe3' => $this->available_color3,
-        ];
-        $imagesDir =  Yii::$app->params["uploadUrl"];
+            $data = [
+                'title' => $title,
+                'content' => $this->description,
+                'offer_for_business_customers' => $this->offer_for_business_customers,
+                'offer_for_private_customers' => $this->offer_for_private_customers,
+                'leistung' => $this->kw . ' kW / ' . $this->ps . ' PS',
+                'verkufer' => $seller->first_name,
+                'bild1' => $this->picture1 != null ? $imagesDir . $this->picture1 : null,
+                'bild2' => $this->picture2 != null ? $imagesDir . $this->picture1 : null,
+                'bild3' => $this->picture3 != null ? $imagesDir . $this->picture1 : null,
+                'bild4' => $this->picture4 != null ? $imagesDir . $this->picture1 : null,
+                'marke_modell' => $this->model,
+                'ausstattungslinie' => $this->equipment_line,
+                'kraftstoffart' => $fuel_type->name,
+                'getriebe' => $transmission->name,
+                'farbe' => $colors,
+                'co2_klasse' => !is_null($pollutant_class) ? $pollutant_class->name : null,
+                'fahrzeugalter' => !is_null($vehicle_age) ? $vehicle_age->name : null,
+                'leasingtyp' => !is_null($leasing_type) ? $leasing_type->name : null,
+                'verfuegbarkeit' => $this->is_vehicle_in_stock,
+                'wartung_verschleiss' => $this->maintenance_and_wear,
+                'monatliche_leasingrate_1' => $this->lease_rate1,
+                'laufleistung_1' => !is_null($kilo_meter) ? $kilo_meter->value : null,
+                'laufzeit_1' => !is_null($run_time) ? $run_time->value : null,
+                'anzahlung_1' => $this->down_payment1,
+                'consumption_in_town' => $this->consumption_in_town,
+                'consumption_outside' => $this->consumption_outside,
+                'consumption' => floatval($this->consumption_in_town) + floatval($this->consumption_outside),
 
-        $data =[
-            'title' => $title,
-            'content' => $this->description,
-            'offer_for_business_customers' => $this->offer_for_business_customers,
-            'offer_for_private_customers' => $this->offer_for_private_customers,
-            'leistung'=> $this->kw .' kW / '.$this->ps.' PS',
-            'verkufer' => $seller->first_name,
-            'bild1'=> $this->picture1 != null ? $imagesDir.$this->picture1 : null,
-            'bild2'=> $this->picture2 != null ? $imagesDir.$this->picture1 : null,
-            'bild3'=> $this->picture3 != null ? $imagesDir.$this->picture1 : null,
-            'bild4'=> $this->picture4 != null ? $imagesDir.$this->picture1 : null,
-            'marke_modell' => $this->model,
-            'ausstattungslinie' => $this->equipment_line,
-            'kraftstoffart' => $fuel_type->name,
-            'getriebe'=> $transmission->name,
-            'farbe' => $colors,
-            'co2_klasse' => !is_null($pollutant_class) ?$pollutant_class->name :null,
-            'fahrzeugalter' =>  !is_null($vehicle_age) ?$vehicle_age->name :null,
-            'leasingtyp' => !is_null($leasing_type)? $leasing_type->name : null,
-            'verfuegbarkeit' => $this->is_vehicle_in_stock,
-            'wartung_verschleiss' => $this->maintenance_and_wear,
-            'monatliche_leasingrate_1' => $this->lease_rate1,
-            'laufleistung_1' => !is_null($kilo_meter)? $kilo_meter->value: null,
-            'laufzeit_1' => !is_null($run_time)? $run_time->value: null,
-            'anzahlung_1' => $this->down_payment1,
+            ];
 
-        ];
+            $curl = curl_init();
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "http://dev.leasingdeal.de/wp-json/crm/v1/car",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 30,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "POST",
+                CURLOPT_POSTFIELDS => json_encode($data),
+                CURLOPT_HTTPHEADER => array(
+                    "cache-control: no-cache",
+                    "content-type: application/json",
+                    "postman-token: 24c8e4c5-ea8a-e7f6-1965-4740a9fbfd3f"
+                ),
+            ));
 
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => "http://dev.leasingdeal.de/wp-json/crm/v1/car",
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => "",
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 30,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS => json_encode($data),
-            CURLOPT_HTTPHEADER => array(
-                "cache-control: no-cache",
-                "content-type: application/json",
-                "postman-token: 24c8e4c5-ea8a-e7f6-1965-4740a9fbfd3f"
-            ),
-        ));
-
-        $response = curl_exec($curl);
-        $err = curl_error($curl);
-        curl_close($curl);
+            $response = curl_exec($curl);
+            if(!empty($response)){
+                $this->wp_sent = true;
+                $this->save(false);
+            }
+           // $err = curl_error($curl);
+            curl_close($curl);
+        }
 
         parent::afterSave($insert, $changedAttributes);
     }

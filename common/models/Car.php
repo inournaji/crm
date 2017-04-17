@@ -100,6 +100,7 @@ use yii\web\UploadedFile;
  * @property string $private_special_text
  * @property string $business_special_text
  * @property integer $status
+ * @property boolean $wp_sent
  * @property integer $created_at
  * @property integer $updated_at
  *
