@@ -50,6 +50,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
 
     <?= $form->field($model, 'kw', ['options' => ['class' => $class_4]])->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'ps', ['options' => ['class' => $class_4]])->textInput(['maxlength' => true,'readonly'=>true]) ?>
 
     <?= $form->field($model, 'transmission_id', ['options' => ['class' => $class_4]])->widget(Select2::classname(), [
         'data' => ListHelper::getTransmissionList(),
@@ -175,7 +176,7 @@ $class_8 = "form-group col-lg-8 col-xs-12";
 
     <?= $form->field($model, 'consumption_outside', ['options' => ['class' => $class_4]])->textInput() ?>
 
-    <?= $form->field($model, 'consumption', ['options' => ['class' => $class_4]])->textInput() ?>
+    <?= $form->field($model, 'consumption', ['options' => ['class' => $class_4]])->textInput(['maxlength' => true,'readonly'=>true]) ?>
 
     <?= $form->field($model, 'co2_emmission_komb', ['options' => ['class' => $class_4]])->textInput() ?>
 
@@ -459,6 +460,25 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         ShowHideFields();
         ShowHideFieldsOnChange();
         hideNeuwagenFields();
+
+    // save ps as 1.36 kw
+        $('#car-kw').on('input',function(e){
+            var kw = jQuery('#car-kw').val();
+            if(jQuery.isNumeric(kw))
+                jQuery('#car-ps').val(kw * 1.36);
+            else
+                jQuery('#car-ps').val('');
+        });
+    // calculate consumtion
+        jQuery('#car-consumption_outside,#car-consumption_in_town').on('input',function(e){
+            var in_town = jQuery.isNumeric(jQuery('#car-consumption_in_town').val())? parseInt(jQuery('#car-consumption_in_town').val()) : 0;
+            var out_side =  jQuery.isNumeric(jQuery('#car-consumption_outside').val())? parseInt(jQuery('#car-consumption_outside').val()) : 0;
+
+            if(in_town != 0 || out_side != 0)
+                jQuery('#car-consumption').val(in_town+out_side);
+            else
+                jQuery('#car-consumption').val('');
+        });
     });
     function ShowHideFieldsOnChange() {
         $('#car-same_prices_for_business_private :radio').change(function () {
