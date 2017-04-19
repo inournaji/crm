@@ -5,6 +5,8 @@ use yii\widgets\ActiveForm;
 use kartik\select2\Select2;
 use common\helpers\ListHelper;
 use kartik\file\FileInput;
+use common\models\User;
+use common\models\Company;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Car */
@@ -14,6 +16,9 @@ $class_4 = "form-group col-lg-4 col-xs-12";
 $class_12 = "form-group col-lg-12 col-xs-12";
 $class_6 = "form-group col-lg-6 col-xs-12";
 $class_8 = "form-group col-lg-8 col-xs-12";
+$user = User::findOne(['id' =>Yii::$app->user->getId()]);
+$company = Company::findOne(['id' =>$user->company_id]);
+
 ?>
 <style>
     .form-control {
@@ -26,6 +31,23 @@ $class_8 = "form-group col-lg-8 col-xs-12";
         height: 34px !important;
     }
 </style>
+<div class="car-info row">
+    <?php if(! is_null($company)) {?>
+        <div class="marke-container col-lg-4">
+            <div class=" col-lg-4">Marke: </div>
+            <div class="name col-lg-8"><?php echo $company->name ?></div>
+        </div>
+        <div class="Title-container  col-lg-8">
+            <div class=" col-lg-4">Title: </div>
+            <div class="name col-lg-8" id="car-title">
+                <span id="marke"><?php echo $company->name?></span>
+                <span id="model">{Modell}</span> |
+                <span id="line">{Ausstattungslinie}</span> |
+                <span id="moto">{Motorisierung}</span>
+            </div>
+        </div>
+    <?php } ?>
+</div>
 <div class="car-form">
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
@@ -478,6 +500,33 @@ $class_8 = "form-group col-lg-8 col-xs-12";
                 jQuery('#car-consumption').val(in_town+out_side);
             else
                 jQuery('#car-consumption').val('');
+        });
+        // get title field on update form
+        if (jQuery('#car-model').val() != '')
+            jQuery('#car-title #model').text(jQuery('#car-model').val());
+        if (jQuery('#car-equipment_line').val() != '')
+            jQuery('#car-title #line').text(jQuery('#car-equipment_line').val());
+        if (jQuery('#car-motorization').val() != '')
+            jQuery('#car-title #moto').text(jQuery('#car-motorization').val());
+
+        // build title field
+        $('#car-model').keyup(function(){
+            var title = jQuery(this).val();
+            if(title == '')
+                title = "{Modell}";
+            jQuery('#car-title #model').text(title);
+        });
+        $('#car-equipment_line').keyup(function(){
+            var title = jQuery(this).val();
+            if(title == '')
+                title = "{Ausstattungslinie}";
+            jQuery('#car-title #line').text(title);
+        });
+        $('#car-motorization').keyup(function(){
+            var title = jQuery(this).val();
+            if(title == '')
+                title = "{Motorisierung}";
+            jQuery('#car-title #moto').text(title);
         });
     });
     function ShowHideFieldsOnChange() {

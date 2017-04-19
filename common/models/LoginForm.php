@@ -72,13 +72,15 @@ class LoginForm extends Model
     {
         if ($this->_user === null) {
             $this->_user = User::findByEmail($this->email);
-            if ($role != null) {
-                if ($role != $this->_user->role)
-                    return null;
-            } else {
-                if ($exculded_role != null)
-                    if ($exculded_role == $this->_user->role)
+            if($this->_user != null) {
+                if ($role != null) {
+                    if ($role != $this->_user->role)
                         return null;
+                } else {
+                    if ($exculded_role != null)
+                        if ($exculded_role == $this->_user->role)
+                            return null;
+                }
             }
         }
 
