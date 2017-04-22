@@ -64,6 +64,12 @@ class Car extends \common\models\Car
             $kilo_meter = KilometerConfig::findOne(['id' => $this->kilometer_id1]);
             $seller = User::findOne(['id' => $this->seller_id]);
             $company = Company::findOne(['id' => $seller->company_id]);
+            $co2_emmission_komb = !empty($this->co2_emmission_komb)? 'kombiniert: '.$this->co2_emmission_komb : '';
+            $consumption_in_town = !empty($this->consumption_in_town)? 'innerorts '.$this->consumption_in_town.' / ' : '';
+            $consumption_outside = !empty($this->consumption_outside)? 'außerorts '.$this->consumption_outside.' / ' : '';
+
+           // $total_consumption='Kraftstoffverbrauch, l/100 km: innerorts 6,6 / außerorts 4,7 / kombiniert 5,4, CO2-Emissionen g/km: kombiniert: {co2_komb} .';
+            $total_consumption='Kraftstoffverbrauch, l/100 km: '.$consumption_in_town.' '.$consumption_outside.' {con_komb} CO2-Emissionen g/km: '.$co2_emmission_komb.' .';
             $title = '';
             if (!is_null($company))
                 $title .= $company->name . ' ';
@@ -95,6 +101,7 @@ class Car extends \common\models\Car
                 'kraftstoffart' => $fuel_type->name,
                 'getriebe' => $transmission->name,
                 'farbe' => $colors,
+                'verbrauch_short' => $total_consumption,
                 'co2_klasse' => !is_null($pollutant_class) ? $pollutant_class->name : null,
                 'fahrzeugalter' => !is_null($vehicle_age) ? $vehicle_age->name : null,
                 'leasingtyp' => !is_null($leasing_type) ? $leasing_type->name : null,
