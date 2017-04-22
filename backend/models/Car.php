@@ -69,7 +69,7 @@ class Car extends \common\models\Car
             $consumption_outside = !empty($this->consumption_outside)? 'außerorts '.$this->consumption_outside.' / ' : '';
 
            // $total_consumption='Kraftstoffverbrauch, l/100 km: innerorts 6,6 / außerorts 4,7 / kombiniert 5,4, CO2-Emissionen g/km: kombiniert: {co2_komb} .';
-            $total_consumption='Kraftstoffverbrauch, l/100 km: '.$consumption_in_town.' '.$consumption_outside.' {con_komb} CO2-Emissionen g/km: '.$co2_emmission_komb.' .';
+            $total_consumption='Kraftstoffverbrauch, l/100 km: '.$consumption_in_town.' '.$consumption_outside.' '.floatval($this->consumption_in_town) + floatval($this->consumption_outside).' CO2-Emissionen g/km: '.$co2_emmission_komb.' .';
             $title = '';
             if (!is_null($company))
                 $title .= $company->name . ' ';
